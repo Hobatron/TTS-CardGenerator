@@ -68,7 +68,7 @@ async function testingImageGen(back) {
     
     const buffer = canvas.toBuffer('image/png');
     
-    await fs.writeFileSync('./logo.jpg', buffer);
+    await fs.writeFileSync('./cards.jpg', buffer);
 }
 //(width/2-txtOffSet/2) - centered text
 // let txtOffSet = text.length * fontWidth;

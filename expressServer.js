@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 var WebSocketServer = require('ws').Server,
   wss = new WebSocketServer({port: 40510})
 
-app.get('/logo.jpg', (req, res) => {
-  res.sendFile('C:/temp/logo.jpg');
+app.get('/cards.jpg', (req, res) => {
+  res.sendFile('C:/temp/cards.jpg');
 })
 
 process.once('SIGINT', async (signal) => {

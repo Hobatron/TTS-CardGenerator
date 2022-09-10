@@ -1,5 +1,5 @@
 ## Installation
-fork repo
+
 Follow these instructions to install canvas: https://github.com/Automattic/node-canvas/wiki/Installation:-Windows
 Note: I had to downgrade my node version to the latest 15, as of writing this it's the latest version of node supported by Canvas
 
