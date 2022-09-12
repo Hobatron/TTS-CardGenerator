@@ -1,5 +1,4 @@
 const express = require('express');
-const open = require('open');
 var entry = require('./generateCards').entry;
 const app = express()
 var args = process.argv.slice(2);

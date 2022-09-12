@@ -6,7 +6,7 @@ function radiusStroke(
     y,
     width,
     height,
-    radius = 30,
+    radius = 35,
     fill = true,
     stroke = true
 ) {
