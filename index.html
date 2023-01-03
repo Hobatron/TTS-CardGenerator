@@ -12,7 +12,6 @@
         var ws = new WebSocket('ws://localhost:40510');
         ws.onclose = function (e) {
             reloadPage()
-           
         }
         ws.onmessage = (m) => {
             reloadPage()
