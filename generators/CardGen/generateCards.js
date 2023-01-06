@@ -3,7 +3,8 @@ const { createCanvas, loadImage, registerFont } = require('canvas');
 const { radiusStroke } = require('./radiusStroke.js');
 const { ipsum } = require('lorem');
 const csv = require('fast-csv');
-const data = []
+let equipmentData = [];
+let usablesData = [];
 
 //Card sizing
 const cardRatio = 88/63
@@ -36,32 +37,33 @@ const ctx = canvas.getContext('2d');
 function entry() {
     registerFont('./Tts_icons-Regular.ttf', { family: 'Icon Pack' });
     registerFont('./LiberationMono-Bold.ttf', { family: 'Liberation Mono' });
-    fs.createReadStream('./cardCsv.csv')
+    fs.createReadStream('./equipmentCsv.csv')
         .pipe(csv.parse({ headers: true }))
         .on('error', error => console.error(error))
-        .on('data', row => data.push(row))
+        .on('data', row => equipmentData.push(row))
         .on('end', () => {
-            cardCount = data.length;
-            loadImages('./Chest (GameLiberty).png', 'equipment');
+            cardCount = equipmentData.length;
+            loadImages('./Chest (GameLiberty).png', 'equipment', equipmentData);
         });
-    fs.createReadStream('./cardCsv.csv')
+    fs.createReadStream('./usablesCsv.csv')
         .pipe(csv.parse({ headers: true }))
         .on('error', error => console.error(error))
-        .on('data', row => data.push(row))
+        .on('data', row => usablesData.push(row))
         .on('end', () => {
-            cardCount = data.length;
-            loadImages('./Scroll (GameLiberty).png', 'useables');
+            cardCount = usablesData.length;
+            console.log();
+            loadImages('./Scroll (GameLiberty).png', 'useables', usablesData);
         });
 }
 
-async function loadImages(imageName, fileName) {
+async function loadImages(imageName, fileName,data ) {
     loadImage(imageName).then(image => {
-        testingImageGen(image, fileName);
+        testingImageGen(image, fileName, data);
     })
 }
 
-async function testingImageGen(back, filename) {
-    console.log(data);
+async function testingImageGen(back, filename, data) {
+    currentCard = 0;
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
             try {
@@ -89,11 +91,12 @@ async function testingImageGen(back, filename) {
             }
             catch (error) {
                 console.log(error);
-                console.log('Row: '+ row + '/Col: '+ col)
+                console.log('Prev card: ' + (currentCard - 1), data[currentCard - 1])
+                console.log('Current card: ' + currentCard, data[currentCard])
+                return;
             }
         }
         if (currentCard == sheetSize) {
-            currentCard = 0;
             break; 
         }
     }
@@ -106,14 +109,19 @@ async function testingImageGen(back, filename) {
 function addCost(ctx, x, y, cost) {
     //cost = ['R', 'R', 'G', 'G', 'B']; 
     ctx.font = `${fontSize}px "Icon Pack"`;
-    if (typeof(cost == 'number')) {
+    if (isNaN(parseInt(cost))) {
         for(let i = 0; i < cost; i++) {
             ctx.fillStyle = '#D4AF37';
             ctx.fillText("B", x+80+i*fontSize, y+80+fontSize);
         };
+    } else if (cost[cost.length - 1] == '+') {
+        ctx.font = `${fontSize}px "Liberation Mono"`
+        ctx.fillStyle = '#000';
+        ctx.fillText(cost, x+80+fontSize, y+80+fontSize);
     } else {
     //Old gem-cost code works with cost format 'R-G-B' -
-        for (let i = 0; i < cost.split('-').length; i++) {
+        cost = cost.split('-');
+        for (let i = 0; i < cost.length; i++) {
             switch(cost[i]) {
                 case 'R':
                     ctx.fillStyle = '#F00';
