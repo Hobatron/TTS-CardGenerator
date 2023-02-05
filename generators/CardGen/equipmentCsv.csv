@@ -1,70 +1,71 @@
 Text,Cost
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-+1 Attack, 4
-+1 Move, 4
-+1 Discover, 3
-+2 Mine, 3
-[Reserve/Craft],
-[Move],
-[Discover/Use],
-[Attack/Mine],
-[Reserve/Craft],
-[Move],
-[Discover/Use],
-[Attack/Mine],
-[Reserve/Craft],
-[Move],
-[Discover/Use],
-[Attack/Mine],
-[Reserve/Craft],
-[Move],
-[Discover/Use],
-[Attack/Mine],
++1 Armor,B-R-G
++1 Move,B-B-B
++1 Move,R-R-R
+Upgrade your "Use" Action | You may use 2 items when you take this action.,G-G-R-R
++1 Attack,B-G
+Upgrade your "Move" action | Teleport instead.,G-G-R-R
++1 Attack Range,B-B-B-B
+You may discard an item to move any action to level 4.,
+One use | Teleport 3 Hexes in any direction.,1
+One use | Teleport up to 5 Hexes in a straight line.,2
+Reveal all adjacent tiles.,4
+One use | Range 2 per level. Deal 2 damage.,1
+One use. Range 1 deal 1 per level. Heal 1 per level.,4
+You have a 5th ability level slot.,G-G
+One use | Range 3 poison all enemies 1 per level -1.,2
+One use | Over-heal 1 per level.,2
+You are immune to lava.,R
+End of turn | You may swap your 2nd and 3rd slots.,G-G-B
+One use | Hit all adjacent hexes. Damage equals double level.,3
+One use | Deal 5 damage to one target within 5 hexes.,4
+One use | Deal 4 damage at range x where x is level.,3
++1 Armor,B-R-G
+Upgrade your "Attack" | Stun. Level 4 + 2 damage. | Fragile,G-G-R-B
+The next action you take gets +2 level (Max 4). | Fragile,
+The next time you would die instead your health is 5. | Fragile,
+When an enemy moves next to you deal one damage to them.,R-R-G-G
+One use | Range equals level. Collect all dropped items in range. Use up to one tile in range.,
+One use | 5 range deal 1 damage per level.,3
+When you take the "Use" action you may move 1 first.,R-R-G
+One use | Range 3. Deal 2 damage per level. Take half that damage yourself.,4
++1 Attack,R-B
+One use | Over-heal 1 per level,2
+At the beginning of your turn discard this and rearrange your focus bar.,2
+One use | Heal all status ailments,
+One use | Heal 2 per level,4
+One use | Range 4 poison 1 per level.,4
+One use | Move equal to level then deal 2 damage to an adjacent player.,2
++2 damage -1 range (can't go below 1).,R-R-G-B
++1 Attack,B-B-B
+Your damage dealing items deal +2.,G-G
++1 Range,R-R-R-R
++1 Attack,R-R-R
+Upgrade your "Discover" action | Discard an Item discover again. Use once per turn.,B-B-B-G
++1 Attack,R-G
++1 Discover and Use.,G-G-B-R
+Upgrade your "Attack" action | You cannot attack adjacent tiles. +1 Range +1 Attack.,B-B-B-R-R
+You may use any level 4 action as though it was any of your level 2 actions.,B-B-R-R-G-G
++1 Attack,G-G-G
+Spend up to X crystals where X is double the level. Heal per green. Attack per red. Move per blue.,3
++2 Move. Mountains cost you 4 move to step onto.,G-G-R-B
++2 Range. -1 Damage,G-G-G-R
++1 Range,G-G-G
+May gold an extra Consumable item.,G
++1 Discover. +1 Use,R-R-R-G
+Hills don't cost extra move for you.,G
+[Passive] Optimized Magic | Your slot level 4 has +1 to all actions.,
+[Craft] Magic Armor | Fly +1 Armor,
+[Move] Phasing Boots | Move +3. You can move through players. When you do deal 1 to them.,
+[Use] Freezing Potion | Your use items also Stun the target. Discard this at will.,
+[Passive] Mirror Force | Reflect x damage when a player damages where x is equal to your Move slot.,
+[Move] Rocket Boots | {R} : Move 3,
+[Use/Discover] Quick-Access Belt | +1 Use. Play with your items revealed.,
+[Craft] Bag of Tricks | Take 3 damage. Draw two equipment. You gain them for free and must equip them.,
+[Attack] Sludge Hammer | {G} Attack +3,
+[Craft] Heal 1. +1 Armor. Your max health is now +5.,
+[Discover/Use] +1 Discover. -1 Use. When you take this Action you may shift your move to any slot level.,
+[Attack] +2 Range. +1 Attack. Spend {G-R-B} to add stun to your attack.,
+[Move/Use] +2 Move. +1 Use. You may stun yourself to do both actions at the same level.,
+[Passive] Capricious Armor | If you would take 4 or more damage take 6 instead.,
+[Attack/Mine] Poison Dagger | You non-lethal attacks deal poison instead.,
