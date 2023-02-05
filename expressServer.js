@@ -14,7 +14,7 @@ var WebSocketServer = require('ws').Server,
   wss = new WebSocketServer({port: 40510})
 
 app.get('/testing-tile-gen.png', (req, res) => {
-  res.sendFile('E:/TTS-Game/New folder/TTS-CardGenerator/testing-tile-gen.png');
+  res.sendFile('E:/TTS-Game/testing-tile-gen.png');
 })
 
 
