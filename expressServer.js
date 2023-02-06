@@ -1,5 +1,6 @@
 const express = require('express');
-var entry = require('./generators/TileGen/generateTiles').entry;
+var entry = require('./generators/CardGen/generateCards').entry;
+//var entry = require('./generators/TileGen/generateTiles').entry;
 const app = express()
 var args = process.argv.slice(2);
 var port = args[args.findIndex(function (s) { return s == '-port'; }) + 1];

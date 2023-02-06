@@ -35,24 +35,24 @@ let currentCard = 0;
 const ctx = canvas.getContext('2d');
 
 function entry() {
-    registerFont('./Tts_icons-Regular.ttf', { family: 'Icon Pack' });
-    registerFont('./LiberationMono-Bold.ttf', { family: 'Liberation Mono' });
-    fs.createReadStream('./equipmentCsv.csv')
+    registerFont('./generators/CardGen/Tts_icons-Regular.ttf', { family: 'Icon Pack' });
+    registerFont('./generators/CardGen/LiberationMono-Bold.ttf', { family: 'Liberation Mono' });
+    fs.createReadStream('./generators/CardGen/equipmentCsv.csv')
         .pipe(csv.parse({ headers: true }))
         .on('error', error => console.error(error))
         .on('data', row => equipmentData.push(row))
         .on('end', () => {
             cardCount = equipmentData.length;
-            loadImages('./Chest (GameLiberty).png', 'equipment', equipmentData);
+            loadImages('./generators/CardGen/Chest (GameLiberty).png', 'equipment', equipmentData);
         });
-    fs.createReadStream('./usablesCsv.csv')
+    fs.createReadStream('./generators/CardGen/usablesCsv.csv')
         .pipe(csv.parse({ headers: true }))
         .on('error', error => console.error(error))
         .on('data', row => usablesData.push(row))
         .on('end', () => {
             cardCount = usablesData.length;
             console.log();
-            loadImages('./Scroll (GameLiberty).png', 'useables', usablesData);
+            loadImages('./generators/CardGen/Scroll (GameLiberty).png', 'useables', usablesData);
         });
 }
 
