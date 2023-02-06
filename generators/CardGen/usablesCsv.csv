@@ -61,10 +61,30 @@ Trigger | The next time you would die instead your health is 5. | Fragile,
 One use | Range equals level. Collect all dropped items in range. Use up to one tile in range.
 One use | Range 4 poison 1 per level., 4+
 One use | Move equal to level then deal 2 damage to an adjacent player., 2+
-Instant | Spend up to X crystals where X is double the level. Heal per green. Attack per red. Move per blue., 3+
-Instant | Gain 3 coins,
+Instant | Spend up to X crystals. Heal 2 per {G}. Deal 1 damage at range 4 per {R}. Move 1 per {B}., 3+
+Instant | Gain 3 Gold,
 Instant | Your next attack deals 3 more damage,
 Instant | Your next mine action gains 4 more coins,
 Instant | Reserve any item from the item row,
 Instant | Teleport 4 spaces,
 Instant | Role 3 hit dice. On 3 hits gain 5 gold
+One use | Teleport 3 Hexes in any direction.,1
+One use | Teleport up to 5 Hexes in a straight line.,2
+One Use | Explore all adjacent tiles.,4
+One use | Range 2 per level. Deal 2 damage.,1
+One use. Range 1 deal 1 per level. Heal 1 per level.,4
+One use | Range 3 poison all enemies 1 per level -1.,2
+One use | Over-heal 1 per level.,2
+One use | Hit all adjacent hexes. Damage equals double level.,3
+One use | Deal 5 damage to one target within 5 hexes.,4
+One use | Deal 4 damage at range x where x is level.,3
+One use | Range equals level. Collect all dropped items in range. Use up to one tile in range.,
+One use | 5 range deal 1 damage per level.,3
+One use | Range 3. Deal 2 damage per level. Take half that damage yourself.,4
+One use | Over-heal 1 per level,2
+One use | Heal all status ailments,
+One use | Heal 2 per level,4
+One use | Range 4 poison 1 per level.,4
+One use | Move equal to level then deal 2 damage to an adjacent player.,2
+Trigger | At the beginning of your turn discard this and rearrange your focus bar.,2
+One use | Spend up to X crystals. Use level is max. Heal 2 per {G}. Attack with level equal to the amount of {R} without moving your Attack card. Move 1 per {B}.,3
