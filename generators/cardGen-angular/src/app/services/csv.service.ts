@@ -39,11 +39,17 @@ export class CsvService {
           const cols = row.match(/(\\.|[^,])+/g);
           if (cols?.length && cols?.length <= 2) {
             //Might be better to add cols to the csv vs using regex here
-            let type = cols[0].match(/(?<=\[)(.*?)(?=\])/g); // returns anything in [] i.e. [Attack/Mine]
-            let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g)
+            let type = cols[0].match(/(?<=\[)(.*?)(?=\])/g) as any; // returns anything in [] i.e. [Attack/Mine]
+            let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g) as any; // returns anything in || i.e. |My Magic Item|
+            let noTypes = cols[0].split(']')[cols[0].split(']').length - 1];
+            let rules = noTypes?.split('|')[noTypes.split('|').length - 1]
+            console.log(name);
+            
             equipment.push({
-              rawText: cols[0],
-              rawCost: cols[1]
+              cost: cols[1],
+              name: name ? name[0] : null,
+              rules: rules,
+              type: type ? name[0] : null
             })
           } else {
             console.error('Invalid columns, check for unescaped commas: ', cols);
@@ -62,8 +68,10 @@ export class CsvService {
 }
 
 export interface Equipment {
-  rawText: string,
-  rawCost: string
+  cost: string | null;
+  name: string | null;
+  type: string | null;
+  rules: string | null;
 }
 
 
