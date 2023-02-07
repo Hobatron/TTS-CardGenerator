@@ -37,21 +37,21 @@ You may use any level 4 action as though it was any of your level 2 actions.,{Go
 May carry an extra Consumable item. (Capacity increased from 3 to 4.),{Gold:3}
 +1 Discover. +1 Use,{Gold:7}
 You may treat Mountains as default terrain.,{Gold:3}
-[Passive] Optimized Magic | Your slot level 4 has +1 to all actions.,{Gold:1}
-[Craft] Magic Armor | Fly (May ignore any terrain effects and move through enemies as long as you do not end your move there. Cannot use effects of printed hexes.) +1 Armor,1{Gold:2}
-[Move] Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:1}
-[Use] Freezing Tincure | Your use items also Stun the target if you pay {Gem:B} Fragile (Item is returned to reserve after each use.),{Gold:3}
-[Passive] Mirror Force | Reflect X-1 damage when a player Attacks you. (Infinite range.) X is equal to your current Move slot.,{Gold:1}
-[Move] Rocket Boots | {Gem:R} : +3 Move,{Gold:5}
-[Use/Discover] Quick-Access Belt | When Crafted:  you may pay up to 2 {Gem:G}. For each gain the top card of the consumable deck. +1 Use. Play with your items revealed.,{Gold:3}
-[Craft] Pandora's Box | You gain the top two cards of the equipment deck and must equip them. Pay life equal to the total gold cost -8.,{Gold:8}
-[Attack] Sludge Hammer | {Gem:G} Attack +3,{Gold:5}
+[Passive] | Optimized Magic | Your slot level 4 has +1 to all actions.,{Gold:1}
+[Craft] | Magic Armor | Fly (May ignore any terrain effects and move through enemies as long as you do not end your move there. Cannot use effects of printed hexes.) +1 Armor,1{Gold:2}
+[Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:1}
+[Use] | Freezing Tincure | Your use items also Stun the target if you pay {Gem:B} Fragile (Item is returned to reserve after each use.),{Gold:3}
+[Passive] | Mirror Force Reflect | X-1 damage when a player Attacks you. (Infinite range.) X is equal to your current Move slot.,{Gold:1}
+[Move] | Rocket Boots | {Gem:R} : +3 Move,{Gold:5}
+[Use/Discover] | Quick-Access Belt | When Crafted:  you may pay up to 2 {Gem:G}. For each gain the top card of the consumable deck. +1 Use. Play with your items revealed.,{Gold:3}
+[Craft] Pandora'| s Box | You gain the top two cards of the equipment deck and must equip them. Pay life equal to the total gold cost -8.,{Gold:8}
+[Attack] | Sludge Hammer | {Gem:G} Attack +3,{Gold:5}
 [Craft] +1 Armor. When you roll one or more {Dice:!} while defending\, you may spend {Gem:B} to Heal 4.,{Gold:9}
 [Discover/Use] +1 Discover. -1 Use. When you use the Use Action you may shift your Move Card to any slot.,{Gold:5}
 [Attack] +2 Range. +1 Attack. Spend {Gem:G-R-B} to add stun to your attack.,{Gold:1}
 [Move/Use] +2 Move. +1 Use. Once per turn:  you may stun yourself to take an additional action. This additional action must be a Move or a Use.,{Gold:1}
 [Passive] If you would take 4 or more damage take 2 less instead.,{Gold:1}
-[Attack/Mine] Poison Dagger | You may pay {Gem:G} when you attack to inflict poison instead of damage.,{Gold:8}
+[Attack/Mine] | Poison Dagger | You may pay {Gem:G} when you attack to inflict poison instead of damage.,{Gold:8}
 [Reserve/Craft]	
 [Move]	
 [Discover/Use]	
