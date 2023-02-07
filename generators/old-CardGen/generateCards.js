@@ -107,65 +107,88 @@ async function testingImageGen(back, filename, data) {
 }
 
 function addCost(ctx, x, y, cost) {
-    //cost = ['R', 'R', 'G', 'G', 'B']; 
     ctx.font = `${fontSize}px "Icon Pack"`;
-    if (isNaN(parseInt(cost))) {
-        for(let i = 0; i < cost; i++) {
-            ctx.fillStyle = '#D4AF37';
-            ctx.fillText("B", x+80+i*fontSize, y+80+fontSize);
-        };
-    } else if (cost[cost.length - 1] == '+') {
+    if (cost[cost.length - 1] == '+') {
         ctx.font = `${fontSize}px "Liberation Mono"`
         ctx.fillStyle = '#000';
-        ctx.fillText(cost, x+80+fontSize, y+80+fontSize);
-    } else {
-    //Old gem-cost code works with cost format 'R-G-B' -
-        cost = cost.split('-');
-        for (let i = 0; i < cost.length; i++) {
-            switch(cost[i]) {
-                case 'R':
-                    ctx.fillStyle = '#F00';
-                    break;
-                case 'G':
-                    ctx.fillStyle = '#0F0';
-                    break;
-                case 'B':
-                    ctx.fillStyle = '#00F';
-                    break;
-                default:
-                    ctx.fillStyle = '#FFF';
-                    break;
-            }
-            ctx.fillText("C", x+80+i*fontSize, y+80+fontSize);
-        }
-    }
+        ctx.fillText(cost, x+80+fontSize, y+80+fontSize)
+    } else if (!isNaN(parseInt(cost))) {
+            ctx.fillStyle = '#D4AF37';
+            ctx.fillText("B", x+80+fontSize, y+80+fontSize);
+            ctx.font = `${fontSize}px "Liberation Mono"`
+            ctx.fillStyle = '#000';
+            ctx.fillText("x" + cost, x+80+fontSize*2, y+80+fontSize);
+    } 
 }
 
 //(width/2-txtOffSet/2) - centered text
 // let txtOffSet = text.length * fontWidth;
 function addRulesText(ctx, x, y, text) {
-    //let text = ipsum('s3$120'); //this is temp text
     let words = text.split(' ');
-    let strRows = ['', '', '', '', '', '', '', '']; //Add more/less to add or remove rows
     let letterCount = 0;
-    let row = 0;
+    let row = 0;    
     for (let i = 0; i < words.length; i++) {
-        const word = words[i] + ' ';
-        letterCount += word.length;
-        if (letterCount - 1 <= maxLettersPerRow) {
-            strRows[row] += `${word}`;
-        } else {
-            row++;
-            letterCount = word.length;
-            strRows[row] += `${word}`;
-        }
+        
     }
-
-    for (let i = 0; i < strRows.length; i++) {
-        if(strRows[i].includes('undefined')) throw new Error(`Rules text out of bounds: ${text}`);
-        ctx.fillText(strRows[i], x+rulesTextBox.x, y+rulesTextBox.y+i*(fontSize+10));
-    }
-    
 }
+
+//OLD DELETE WHEN NO LONGER NEEDED
+//let text = ipsum('s3$120'); //this is temp text
+    // let words = text.split(' ');
+    // let strRows = ['', '', '', '', '', '', '', '', '']; //Add more/less to add or remove rows
+    // let letterCount = 0;
+    // let row = 0;
+    // for (let i = 0; i < words.length; i++) {
+    //     const word = words[i] + ' ';
+    //     if (word.charAt(0) == "{") {
+    //         letterCount += writeSymbol(x,y,letterCount,row, word);
+    //     } else {
+    //         letterCount += word.length;
+    //     }
+    //     if (letterCount - 1 <= maxLettersPerRow) {
+    //         strRows[row] += `${word}`;
+    //     } else {
+    //         row++;
+    //         letterCount = word.length;
+    //         strRows[row] += `${word}`;
+    //     }
+    // }
+
+    // for (let i = 0; i < strRows.length; i++) {
+    //     ctx.font = `${fontSize}px "Liberation Mono"`
+    //     ctx.fillStyle = '#000';
+    //     if(strRows[i].includes('undefined')) throw new Error(`Rules text out of bounds: ${text}`);
+    //     ctx.fillText(strRows[i], x+rulesTextBox.x, y+rulesTextBox.y+i*(fontSize+10));
+    // }
+
+    // function writeSymbol(x, y, letterCount, row, word) {
+    //     ctx.font = `${fontSize}px "Icon Pack"`;
+    //     const key = word.split('{')[1].split(':')[0];
+    //     let value = word.split(':')[1].split('}')[0]
+    //     switch(key) {
+    //         case "Gem": {
+    //             value = value.split('-');
+    //             for (let i = 0; i < value.length; i++) {
+    //                 switch(value[i]) {
+    //                     case 'R':
+    //                         ctx.fillStyle = '#F00';
+    //                         break;
+    //                     case 'G':
+    //                         ctx.fillStyle = '#0F0';
+    //                         break;
+    //                     case 'B':
+    //                         ctx.fillStyle = '#00F';
+    //                         break;
+    //                     default:
+    //                         ctx.fillStyle = '#FFF';
+    //                         break;
+    //                 }
+    //                 ctx.fillText("C", x+rulesTextBox.x+fontSize*5, y+rulesTextBox.y+(row)*(fontSize+10));
+    //             }
+    //         }
+    //     }
+    //     return value.length;
+    // }
+    
 
 module.exports.entry = entry;

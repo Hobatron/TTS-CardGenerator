@@ -61,7 +61,7 @@ Trigger | The next time you would die instead your health is 5. | Fragile,
 One use | Range equals level. Collect all dropped items in range. Use up to one tile in range.
 One use | Range 4 poison 1 per level., 4+
 One use | Move equal to level then deal 2 damage to an adjacent player., 2+
-Instant | Spend up to X crystals. Heal 2 per {G}. Deal 1 damage at range 4 per {R}. Move 1 per {B}., 3+
+Instant | Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 3+
 Instant | Gain 3 Gold,
 Instant | Your next attack deals 3 more damage,
 Instant | Your next mine action gains 4 more coins,
@@ -87,4 +87,4 @@ One use | Heal 2 per level,4
 One use | Range 4 poison 1 per level.,4
 One use | Move equal to level then deal 2 damage to an adjacent player.,2
 Trigger | At the beginning of your turn discard this and rearrange your focus bar.,2
-One use | Spend up to X crystals. Use level is max. Heal 2 per {G}. Attack with level equal to the amount of {R} without moving your Attack card. Move 1 per {B}.,3
+One use | Spend up to X crystals. Use level is max. Heal 2 per {Gem:G}. Attack with level equal to the amount of {Gem:R} without moving your Attack card. Move 1 per {Gem:B}.,3

@@ -1,0 +1,6 @@
+<app-card-main>
+</app-card-main>
+<div *ngFor="let equipment of loadedEquipment$ | async">
+    {{equipment.rawText}}
+    {{equipment.rawCost}}
+</div>
