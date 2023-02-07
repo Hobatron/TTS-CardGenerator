@@ -38,6 +38,9 @@ export class CsvService {
         rows.forEach(row => {
           const cols = row.match(/(\\.|[^,])+/g);
           if (cols?.length && cols?.length <= 2) {
+            //Might be better to add cols to the csv vs using regex here
+            let type = cols[0].match(/(?<=\[)(.*?)(?=\])/g); // returns anything in [] i.e. [Attack/Mine]
+            let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g)
             equipment.push({
               rawText: cols[0],
               rawCost: cols[1]
