@@ -13,7 +13,7 @@ export class CsvService {
 
   getEquipmentCSV() {
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     })
 
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
