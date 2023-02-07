@@ -13,7 +13,7 @@ export class CsvService {
 
   getEquipmentCSV() {
     const octokit = new Octokit({
-      auth: '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'
+      auth: ''
     })
 
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
@@ -36,7 +36,7 @@ export class CsvService {
         delete rows[0];
         rows.forEach(row => {
           const cols = row.match(/(\\.|[^,])+/g);
-          if (cols?.length === 2) {
+          if (cols?.length && cols?.length <= 2) {
             equipment.push({
               rawText: cols[0],
               rawCost: cols[1]
