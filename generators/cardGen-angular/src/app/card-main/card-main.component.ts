@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CardConstants } from '../mainVariables';
 
 @Component({
@@ -8,11 +8,14 @@ import { CardConstants } from '../mainVariables';
 })
 export class CardMainComponent implements OnInit {
   public cardConsts = new CardConstants();
+  @Input() public type?: string;
+  @Input() public cost?: string;
+  @Input() public name?: string;
+  @Input() public rules?: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.cardConsts.cols);
     
   }
 
