@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Octokit } from 'octokit';
 import { defer, from, Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class CsvService {
 
   getEquipmentCSV() {
     const octokit = new Octokit({
-      auth: ''
+      auth: environment.github
     })
 
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
