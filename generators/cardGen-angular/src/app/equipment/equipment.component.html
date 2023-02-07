@@ -1,8 +1,10 @@
-<app-card-main type="">
-</app-card-main>
-<div *ngFor="let equipment of loadedEquipment$ | async">
-    {{equipment.cost}}
-    {{equipment.type}}
-    {{equipment.name}}
-    {{equipment.rules}}
+
+<div [ngStyle]="this.sheetStyle">
+    <app-card-main *ngFor="let equipment of loadedEquipment$ | async"
+        [cost]="equipment.cost"
+        [type]="equipment.type"
+        [name]="equipment.name"
+        [rules]="equipment.rules"    
+    >
+    </app-card-main>
 </div>

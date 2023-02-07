@@ -9,7 +9,12 @@ import { CsvService, Equipment } from '../services/csv.service';
 })
 export class EquipmentComponent implements OnInit {
   public loadedEquipment$: Observable<Equipment[]> | undefined;
-
+  public sheetStyle = {
+    display: 'grid', 
+    'grid-template-columns': '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr', 
+    'grid-template-rows': '1fr 1fr 1fr 1fr 1fr 1fr 1fr', 
+    gap: '0px 0px', 
+  }
   constructor(private csvService: CsvService) { }
 
   ngOnInit(): void {

@@ -42,14 +42,13 @@ export class CsvService {
             let type = cols[0].match(/(?<=\[)(.*?)(?=\])/g) as any; // returns anything in [] i.e. [Attack/Mine]
             let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g) as any; // returns anything in || i.e. |My Magic Item|
             let noTypes = cols[0].split(']')[cols[0].split(']').length - 1];
-            let rules = noTypes?.split('|')[noTypes.split('|').length - 1]
-            console.log(name);
+            let rules = noTypes?.split('|')[noTypes.split('|').length - 1];
             
             equipment.push({
               cost: cols[1],
-              name: name ? name[0] : null,
+              name: name ? name[0] : undefined,
               rules: rules,
-              type: type ? name[0] : null
+              type: type ? type[0] : undefined
             })
           } else {
             console.error('Invalid columns, check for unescaped commas: ', cols);
@@ -68,10 +67,10 @@ export class CsvService {
 }
 
 export interface Equipment {
-  cost: string | null;
-  name: string | null;
-  type: string | null;
-  rules: string | null;
+  cost: string | undefined;
+  name: string | undefined;
+  type: string | undefined;
+  rules: string | undefined;
 }
 
 

@@ -8,15 +8,25 @@ import { CardConstants } from '../mainVariables';
 })
 export class CardMainComponent implements OnInit {
   public cardConsts = new CardConstants();
+  public cardStyle = {
+    width: this.cardConsts.width+'px',
+    height: this.cardConsts.height+'px',
+    padding: 35 + 'px',
+    border: 35 + 'px ' + 'solid' + '#000'
+    
+  };
   @Input() public type?: string;
   @Input() public cost?: string;
   @Input() public name?: string;
   @Input() public rules?: string;
 
-  constructor() { }
+  constructor() {
+    console.log(this.cardStyle);
+    
+   }
 
   ngOnInit(): void {
-    
+
   }
 
 }
