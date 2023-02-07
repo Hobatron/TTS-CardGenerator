@@ -13,18 +13,18 @@ export class CsvService {
 
   getEquipmentCSV() {
     const octokit = new Octokit({
-      auth: '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'
+      auth: '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'
     })
 
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'Hobatron',
       repo: 'TTS-CardGenerator',
-      path: 'generators/CardGen/equipmentCsv.csv',
+      path: 'generators/old-CardGen/equipmentCsv.csv',
       mediaType: {
         format: 'raw'
       }
     }).then((value) => {
-      return this.castToEquipment(atob((value.data as any).content));
+      return this.castToEquipment(value.data as any);
     })
   }
 
