@@ -1,10 +1,13 @@
 <div [ngStyle]="this.cardStyle">
-    <div>
-        <div class="type">{{this.type}}</div>
-        <div>
-            <div class="cost">{{this.cost}}</div>
-            <div class="name">{{this.name}}</div>
+    <div class="inner-card">
+        <div class="spacing">
+            <div *ngIf="this.type; else noType" class="type">{{this.type}}</div>
+            <ng-template #noType>&nbsp;</ng-template>
+            <div>
+                <span class="name">{{this.name}}</span>
+                <span *ngFor="let cost of this.costs" class="cost">{{cost.type}}x{{cost.value}}</span>
+            </div>
+            <div class="rules">{{this.rules}}</div>
         </div>
-        <div class="rules">{{this.rules}}</div>
     </div>
 </div>

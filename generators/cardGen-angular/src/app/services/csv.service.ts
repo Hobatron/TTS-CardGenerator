@@ -38,18 +38,19 @@ export class CsvService {
         rows.forEach(row => {
           const cols = row.match(/(\\.|[^,])+/g);
           if (cols?.length && cols?.length <= 2) {
-            //Might be better to add cols to the csv vs using regex here
+            //Might be better to add cols to the csv rather than using regex here
             let type = cols[0].match(/(?<=\[)(.*?)(?=\])/g) as any; // returns anything in [] i.e. [Attack/Mine]
             let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g) as any; // returns anything in || i.e. |My Magic Item|
-            let noTypes = cols[0].split(']')[cols[0].split(']').length - 1];
-            let rules = noTypes?.split('|')[noTypes.split('|').length - 1];
-            
+            let noTypes = cols[0].split(']')[cols[0].split(']').length - 1]; // returns everything after any []
+            let rules = noTypes?.split('|')[noTypes.split('|').length - 1]; // returns everything after any []
+            let cost = this.mapCost(cols[1]);
+
             equipment.push({
-              cost: cols[1],
+              cost: cost,
               name: name ? name[0] : undefined,
               rules: rules,
               type: type ? type[0] : undefined
-            })
+            }) 
           } else {
             console.error('Invalid columns, check for unescaped commas: ', cols);
             throw new Error('');
@@ -64,10 +65,33 @@ export class CsvService {
 
     return equipment;
   }
+  
+  mapCost(col: string): Resource[] | undefined {
+    let cost: Resource[] = [] as Resource[];
+    if (!col) {
+      return undefined;
+    }
+    col = col.replace(/[{}]/g, '');
+    let keyValues: Array<string[]> = [];
+    col.split(';').forEach(keyValue => keyValues.push(keyValue.split(':')));
+    keyValues.forEach(kv => {
+      cost.push({
+        type: kv[0].toLowerCase() as 'gem' | 'gold' | 'slot',
+        value: parseInt(kv[1])
+      });
+    });
+
+    return cost;
+  }
+}
+
+export interface Resource {
+  type: 'gem' | 'gold' | 'slot'
+  value: number
 }
 
 export interface Equipment {
-  cost: string | undefined;
+  cost: Resource[] | undefined;
   name: string | undefined;
   type: string | undefined;
   rules: string | undefined;

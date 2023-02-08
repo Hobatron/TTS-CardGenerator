@@ -1,0 +1,25 @@
+.type {
+    text-align: center;
+    font-size: 48px;
+}
+
+.cost {
+    float: right;
+}
+
+.name {
+    font-size: 38px;
+}
+
+.rules {
+    margin-top: 60%;
+}
+
+.inner-card {
+    background-color: white;
+    border-radius: 25px;
+    height: 92%; //92%: this number must match throughout search the project for this comment for refrences
+    width: 92%; //92%: this number must match throughout search the project for this comment for refrences
+    margin: auto;
+}
+

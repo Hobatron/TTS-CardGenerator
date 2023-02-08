@@ -1,5 +1,5 @@
 export class CardConstants {
-    public cardRatio = 88/63
+    public cardRatio = 88/63 // this ratio seems off in tts, not sure why
     public width = 720;
     public height = this.width*this.cardRatio;
     public cardCount = 69; //tts can do a max of 69 per sheet, including back image

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CardConstants } from '../mainVariables';
+import { Resource } from '../services/csv.service';
 
 @Component({
   selector: 'app-card-main',
@@ -9,24 +10,20 @@ import { CardConstants } from '../mainVariables';
 export class CardMainComponent implements OnInit {
   public cardConsts = new CardConstants();
   public cardStyle = {
-    width: this.cardConsts.width+'px',
+    width: this.cardConsts.width+'px', 
     height: this.cardConsts.height+'px',
-    padding: 35 + 'px',
-    border: 35 + 'px ' + 'solid' + '#000'
-    
+    'background-color': '#000',
+    display: 'grid',
   };
   @Input() public type?: string;
-  @Input() public cost?: string;
+  @Input() public costs?: Resource[];
   @Input() public name?: string;
   @Input() public rules?: string;
 
   constructor() {
-    console.log(this.cardStyle);
-    
-   }
+  }
 
   ngOnInit(): void {
-
   }
 
 }
