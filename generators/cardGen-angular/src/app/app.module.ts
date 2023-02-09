@@ -7,13 +7,15 @@ import { CardMainComponent } from './card-main/card-main.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { CsvService } from './services/csv.service';
 import { UsablesComponent } from './usables/usables.component';
+import { IconComponent } from './icon/icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardMainComponent,
     EquipmentComponent,
-    UsablesComponent
+    UsablesComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,9 @@
             <ng-template #noType>&nbsp;</ng-template>
             <div>
                 <span class="name">{{this.name}}</span>
-                <span *ngFor="let cost of this.costs" class="cost">{{cost.type}}x{{cost.value}}</span>
+                <span *ngFor="let cost of this.costs" class="cost">
+                    <app-icon ></app-icon>
+                </span>
             </div>
             <div class="rules">{{this.rules}}</div>
         </div>
