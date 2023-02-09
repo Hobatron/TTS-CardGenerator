@@ -46,7 +46,7 @@ You may treat Mountains as default terrain.,{Gold:3}
 [Use/Discover] | Quick-Access Belt | When Crafted:  you may pay up to 2 {Gem:G}. For each gain the top card of the consumable deck. +1 Use. Play with your items revealed.,{Gold:3}
 [Craft] | Pandora' s Box | You gain the top two cards of the equipment deck and must equip them. Pay life equal to the total gold cost -8.,{Gold:8}
 [Attack] | Sludge Hammer | {Gem:G} Attack +3,{Gold:5}
-[Craft] +1 Armor. When you roll one or more {Dice:!} while defending\, you may spend {Gem:B} to Heal 4.,{Gold:9}
+[Craft] +1 Armor. When you roll one or more {Dice:!} while defending you may spend {Gem:B} to Heal 4.,{Gold:9}
 [Discover/Use] +1 Discover. -1 Use. When you use the Use Action you may shift your Move Card to any slot.,{Gold:5}
 [Attack] +2 Range. +1 Attack. Spend {Gem:G-R-B} to add stun to your attack.,{Gold:12}
 [Move/Use] +2 Move. +1 Use. Once per turn:  you may stun yourself to take an additional action. This additional action must be a Move or a Use.,{Gold:13}
