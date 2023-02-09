@@ -52,19 +52,19 @@ You may treat Mountains as default terrain.,{Gold:3}
 [Move/Use] +2 Move. +1 Use. Once per turn:  you may stun yourself to take an additional action. This additional action must be a Move or a Use.,{Gold:13}
 [Passive] If you would take 4 or more damage take 2 less instead.,{Gold:13}
 [Attack/Mine] | Poison Dagger | You may pay {Gem:G} when you attack to inflict poison instead of damage.,{Gold:8}
-[Reserve/Craft]	
-[Move]	
-[Discover/Use]	
-[Attack/Mine]	
-[Reserve/Craft]	
-[Move]	
-[Discover/Use]	
-[Attack/Mine]	
-[Reserve/Craft]	
-[Move]	
-[Discover/Use]	
-[Attack/Mine]	
-[Reserve/Craft]	
-[Move]	
-[Discover/Use]	
-[Attack/Mine]
+[Reserve/Craft],	
+[Move],	
+[Discover/Use],	
+[Attack/Mine],
+[Reserve/Craft],	
+[Move],	
+[Discover/Use],	
+[Attack/Mine],	
+[Reserve/Craft],	
+[Move],	
+[Discover/Use],	
+[Attack/Mine],	
+[Reserve/Craft],
+[Move],	
+[Discover/Use],	
+[Attack/Mine],
