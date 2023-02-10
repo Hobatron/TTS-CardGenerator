@@ -69,13 +69,13 @@ export class CsvService {
   }
 }
 
-export interface Resource {
-  type: 'gem' | 'gold' | 'slot'
+export interface Icon {
+  type: 'gem' | 'gold' | 'slot' | 'dice'
   value: number | string
 }
 
 export interface Equipment {
-  cost: Resource[] | undefined;
+  cost: Icon[] | undefined;
   name: string | undefined;
   type: string | undefined;
   rules: string | undefined;

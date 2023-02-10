@@ -1,8 +1,8 @@
-import { Resource } from "../services/csv.service";
+import { Icon } from "../services/csv.service";
 
 export class Mapper {
-    cost(col: string): Resource[] {
-        let cost: Resource[] = [] as Resource[];
+    cost(col: string): Icon[] {
+        let cost: Icon[] = [] as Icon[];
         if (!col) {
           return [];
         }

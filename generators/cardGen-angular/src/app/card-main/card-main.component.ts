@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CardConstants } from '../mainVariables';
-import { Resource } from '../services/csv.service';
+import { Icon } from '../services/csv.service';
 
 @Component({
   selector: 'app-card-main',
@@ -16,7 +16,7 @@ export class CardMainComponent implements OnInit {
     display: 'grid',
   };
   @Input() public type?: string;
-  @Input() public costs?: Resource[];
+  @Input() public costs?: Icon[];
   @Input() public name?: string;
   @Input() public rules?: string;
 

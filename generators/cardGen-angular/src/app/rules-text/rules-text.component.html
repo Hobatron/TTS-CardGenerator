@@ -1,6 +1,6 @@
 <span *ngFor="let partialRule of this.splitRules; let i = index" class="rules-text">
     {{partialRule}} 
     <span *ngFor="let cost of this.resourceCosts[i]">
-        <app-icon [resource]="cost" [fontSize]="42"></app-icon>
+        <app-icon [icon]="cost" [fontSize]="42"></app-icon>
     </span>
 </span>

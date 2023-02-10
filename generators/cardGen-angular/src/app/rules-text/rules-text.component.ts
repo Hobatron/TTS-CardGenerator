@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Mapper } from '../mappers/mapper';
-import { Resource } from '../services/csv.service';
+import { Icon } from '../services/csv.service';
 
 @Component({
   selector: 'app-rules-text',
@@ -12,7 +12,7 @@ export class RulesTextComponent implements OnInit {
 
   public splitRules: string[] = [];
   public mapper = new Mapper();
-  public resourceCosts: Array<Resource[] | undefined> = [];
+  public resourceCosts: Array<Icon[] | undefined> = [];
 
   constructor() { 
   }
