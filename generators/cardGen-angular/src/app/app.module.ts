@@ -8,6 +8,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { CsvService } from './services/csv.service';
 import { UsablesComponent } from './usables/usables.component';
 import { IconComponent } from './icon/icon.component';
+import { RulesTextComponent } from './rules-text/rules-text.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { IconComponent } from './icon/icon.component';
     CardMainComponent,
     EquipmentComponent,
     UsablesComponent,
-    IconComponent
+    IconComponent,
+    RulesTextComponent
   ],
   imports: [
     BrowserModule,

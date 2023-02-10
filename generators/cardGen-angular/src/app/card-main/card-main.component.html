@@ -4,12 +4,16 @@
             <div *ngIf="this.type; else noType" class="type">{{this.type}}</div>
             <ng-template #noType>&nbsp;</ng-template>
             <div>
-                <span class="name">{{this.name}}</span>
-                <span *ngFor="let cost of this.costs" class="cost">
-                    <app-icon ></app-icon>
-                </span>
+                <span class="name">{{this.name}}&nbsp;</span>
+                <div class="cost" *ngFor="let cost of this.costs">
+                    <app-icon [resource]="cost"></app-icon>
+                </div>
             </div>
-            <div class="rules">{{this.rules}}</div>
+            <div class="card-image"></div>
+            <div class="rules">
+                <app-rules-text [rules]="this.rules">
+                </app-rules-text>
+            </div>
         </div>
     </div>
 </div>

@@ -38,6 +38,7 @@ May carry an extra Consumable item. (Capacity increased from 3 to 4.),{Gold:3}
 +1 Discover. +1 Use,{Gold:7}
 You may treat Mountains as default terrain.,{Gold:3}
 [Passive] | Optimized Magic | Your slot level 4 has +1 to all actions.,{Gold:13}
+[Passive] | True Sight Aura | Once per turn, if you roll a {Dice:0} you may spend {Gem:B} to change it to a {Dice:Crit},{Gold:8;Gem:B}
 [Craft] | Magic Armor | Fly (May ignore any terrain effects and move through enemies as long as you do not end your move there. Cannot use effects of printed hexes.) +1 Armor,{Gold:12}
 [Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:13}
 [Use] | Freezing Tincure | Your use items also Stun the target if you pay {Gem:B} Fragile (Item is returned to reserve after each use.),{Gold:3}
@@ -52,6 +53,7 @@ You may treat Mountains as default terrain.,{Gold:3}
 [Move/Use] +2 Move. +1 Use. Once per turn:  you may stun yourself to take an additional action. This additional action must be a Move or a Use.,{Gold:13}
 [Passive] If you would take 4 or more damage take 2 less instead.,{Gold:13}
 [Attack/Mine] | Poison Dagger | You may pay {Gem:G} when you attack to inflict poison instead of damage.,{Gold:8}
+<<<<<<< Updated upstream
 [Reserve/Craft],	
 [Move],	
 [Discover/Use],	
@@ -68,3 +70,21 @@ You may treat Mountains as default terrain.,{Gold:3}
 [Move],	
 [Discover/Use],	
 [Attack/Mine],
+=======
+[Reserve/Craft]	
+[Move]	
+[Discover/Use]	
+[Attack/Mine]	
+[Reserve/Craft]	
+[Move]	
+[Discover/Use]	
+[Attack/Mine]	
+[Reserve/Craft]	
+[Move]	
+[Discover/Use]	
+[Attack/Mine]	
+[Reserve/Craft]	
+[Move]	
+[Discover/Use]	
+[Attack/Mine]
+>>>>>>> Stashed changes

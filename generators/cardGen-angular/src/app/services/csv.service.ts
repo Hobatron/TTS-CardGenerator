@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { Octokit } from 'octokit';
 import { defer, from, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Mapper } from '../mappers/mapper';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CsvService {
   equipment$: Observable<Equipment[]> | undefined;
+  mapper: Mapper = new Mapper();
   constructor() { 
     this.equipment$ = defer(() => from(this.getEquipmentCSV()))
   }
@@ -43,7 +45,7 @@ export class CsvService {
             let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g) as any; // returns anything in || i.e. |My Magic Item|
             let noTypes = cols[0].split(']')[cols[0].split(']').length - 1]; // returns everything after any []
             let rules = noTypes?.split('|')[noTypes.split('|').length - 1]; // returns everything after any []
-            let cost = this.mapCost(cols[1]);
+            let cost = this.mapper.cost(cols[1]);
 
             equipment.push({
               cost: cost,
@@ -51,7 +53,7 @@ export class CsvService {
               rules: rules,
               type: type ? type[0] : undefined
             }) 
-          } else {
+          } else if(cols != null) {
             console.error('Invalid columns, check for unescaped commas: ', cols);
             throw new Error('');
           }
@@ -65,29 +67,11 @@ export class CsvService {
 
     return equipment;
   }
-  
-  mapCost(col: string): Resource[] | undefined {
-    let cost: Resource[] = [] as Resource[];
-    if (!col) {
-      return undefined;
-    }
-    col = col.replace(/[{}]/g, '');
-    let keyValues: Array<string[]> = [];
-    col.split(';').forEach(keyValue => keyValues.push(keyValue.split(':')));
-    keyValues.forEach(kv => {
-      cost.push({
-        type: kv[0].toLowerCase() as 'gem' | 'gold' | 'slot',
-        value: parseInt(kv[1])
-      });
-    });
-
-    return cost;
-  }
 }
 
 export interface Resource {
   type: 'gem' | 'gold' | 'slot'
-  value: number
+  value: number | string
 }
 
 export interface Equipment {

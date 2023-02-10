@@ -12,14 +12,21 @@
 }
 
 .rules {
-    margin-top: 60%;
+    margin-top: 37px;
+}
+
+.card-image {
+    border: black 1px solid;
+    margin-top: 37px;
+    height: 350px;
 }
 
 .inner-card {
     background-color: white;
     border-radius: 25px;
-    height: 92%; //92%: this number must match throughout search the project for this comment for refrences
-    width: 92%; //92%: this number must match throughout search the project for this comment for refrences
+    height: 86%; //This one looks good at 86% + 10% from the padding... idk why
+    width: 82%; //92%: this number must match throughout search the project for this comment for refrences
+    padding: 5%; //10%: this count's 2x it's value (padding on both sides, sides and top/bottom)
     margin: auto;
 }
 
