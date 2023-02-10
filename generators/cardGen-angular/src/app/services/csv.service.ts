@@ -22,7 +22,7 @@ export class CsvService {
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'Hobatron',
       repo: 'TTS-CardGenerator',
-      path: 'generators/old-CardGen/equipmentCsv.csv',
+      path: 'generators/cardGen-angular/equipmentCsv.csv',
       mediaType: {
         format: 'raw'
       }
