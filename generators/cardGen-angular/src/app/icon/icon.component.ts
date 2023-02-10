@@ -44,27 +44,25 @@ export class IconComponent implements OnInit {
     }
   }
   setDiceSymbol(face: string | number) {
-    console.log(face);
-    
     switch(face) {
       case('Crit'): {
         this.iconChar = 'C';
-        this.color = '#9BC53D';
+        this.color = '#000';
         break;
       }
       case('Hit'): {
         this.iconChar = '~';
-        this.color = '#FB3640';
+        this.color = '#000';
         break;
       }
       case('!'): {
         this.iconChar = '!';
-        this.color = '#FB3640';
+        this.color = '#E1BC29';
         break;
       }
       case(0): {
         this.iconChar = 'M';
-        this.color = '#00A1E4';
+        this.color = '#FB3640';
         break;
       }
     }

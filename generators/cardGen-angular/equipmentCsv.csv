@@ -38,7 +38,7 @@ May carry an extra Consumable item. (Capacity increased from 3 to 4.),{Gold:3}
 +1 Discover. +1 Use,{Gold:7}
 You may treat Mountains as default terrain.,{Gold:3}
 [Passive] | Optimized Magic | Your slot level 4 has +1 to all actions.,{Gold:13}
-[Passive] | Rage Aura | Once per turn if you roll a {Dice:0} you may spend {Gem:R} to change it to a {Dice:Crit},{Gold:8;Gem:R}
+[Passive] | Rage Aura | Turn all {Dice:0} into {Dice:Crit},{Gold:3;Gem:R}
 [Craft] | Magic Armor | Fly (May ignore any terrain effects and move through enemies as long as you do not end your move there. Cannot use effects of printed hexes.) +1 Armor,{Gold:12}
 [Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:13}
 [Use] | Freezing Tincure | Your use items also Stun the target if you pay {Gem:B} Fragile (Item is returned to reserve after each use.),{Gold:3}
