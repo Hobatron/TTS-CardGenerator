@@ -9,6 +9,7 @@ import { Mapper } from '../mappers/mapper';
 })
 export class CsvService {
   equipment$: Observable<Equipment[]> | undefined;
+  usable$: Observable<Usable[]> | undefined;
   mapper: Mapper = new Mapper();
   constructor() { 
     this.equipment$ = defer(() => from(this.getEquipmentCSV()))
@@ -44,8 +45,12 @@ export class CsvService {
         format: 'raw'
       }
     }).then((value) => {
-      return this.castToEquipment(value.data as any);
+      return this.castToUsables(value.data as any);
     });
+  }
+
+  private castToUsables(glob: any): any {
+
   }
 
   private castToEquipment(glob: string): any {
@@ -95,6 +100,12 @@ export interface Equipment {
   cost: Icon[] | undefined;
   name: string | undefined;
   type: string | undefined;
+  rules: string | undefined;
+}
+
+export interface Usable {
+  name: string | undefined;
+  slot: string | undefined;
   rules: string | undefined;
 }
 
