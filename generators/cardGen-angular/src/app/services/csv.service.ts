@@ -17,7 +17,7 @@ export class CsvService {
   getEquipmentCSV() {
     const octokit = new Octokit({
       auth: environment.github
-    })
+    });
 
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'Hobatron',
@@ -28,7 +28,24 @@ export class CsvService {
       }
     }).then((value) => {
       return this.castToEquipment(value.data as any);
-    })
+    });
+  }
+
+  getUsableCSV() {
+    const octokit = new Octokit({
+      auth: environment.github
+    });
+
+    return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+      owner: 'Hobatron',
+      repo: 'TTS-CardGenerator',
+      path: 'generators/cardGen-angular/usablesCsv.csv',
+      mediaType: {
+        format: 'raw'
+      }
+    }).then((value) => {
+      return this.castToEquipment(value.data as any);
+    });
   }
 
   private castToEquipment(glob: string): any {
