@@ -33,7 +33,7 @@ Text,Cost
 [Passive] May carry an extra Consumable item. (Capacity increased from 3 to 4.),{Gold:3}
 [Passive] May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:6}
 [Passive] +1 Discover. +1 Use,{Gold:6}
-[Passive] Treat all {Dice:!-Miss} as {Dice:Hit},{Gold:6}
+[Passive] Treat all {Dice:!-Miss-Crit} as any combination of {Dice:Hit-!},{Gold:2}
 [Passive] You may ignore downsides of difficult terrain.,{Gold:3}
 [Passive] If you would take 4 or more damage take 2 less instead.,{Gold:12}
 [Passive] +1 Armor. When you roll one or more {Dice:!} while defending you may spend {Gem:B} to Heal 4.,{Gold:8}
