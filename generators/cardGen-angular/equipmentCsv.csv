@@ -53,6 +53,7 @@ Text,Cost
 [Attack/Mine] | Sludge Hammer | {Gem:G} Attack +3,{Gold:5}
 [Discover/Use] +1 Discover. -1 Use. When you use the Use Action you may shift your Move Card to any slot.,{Gold:4}
 [Attack/Mine] +2 Range. +1 Attack. Spend {Gem:G-R-B} to add stun to your attack.,{Gold:11}
+[Attack/Mine] | Brawlers Gauntlets | You can stand on a tile with an enemy. Enemys you share a tile with can't attack you. If an enemy attempts to leave a tile you share attck for 3,{Gold:13}
 [Move/Use] +2 Move. +1 Use. Once per turn:  you may stun yourself to take an additional action. This additional action must be a Move or a Use.,{Gold:10}
 [Attack/Mine] | Poison Dagger | You may pay {Gem:G} when you attack inflict poison instead of damage.,{Gold:6}
 [Reserve/Craft],	
