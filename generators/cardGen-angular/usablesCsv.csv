@@ -1,90 +1,60 @@
 Text,Slot
-[One use] You may discard an item to move any action to level 4.,
-[One use] Teleport 3 Hexes in any direction., 1+
-[One use] Teleport up to 5 Hexes in a straight line., 2+
-[One use] Reveal all adjacent tiles., 4+
-[One use] Range 2 per level. Deal 2 damage., 1+
-[One use] Range 1 deal 1 per level. Heal 1 per level., 4+
-[One use] Range 3 poison all enemies 1 per level -1., 2+
-[One use] Over-heal 1 per level., 2+
-[One use] Hit all adjacent hexes. Damage equals double level., 3+
-[One use] Deal 5 damage to one target within 5 hexes., 4+
-[One use] Deal 4 damage at range x where x is level., 3+
-[Trigger] The next action you take gets +2 level (Max 4). Fragile,
-[Trigger] The next time you would die instead your health is 5. Fragile,
-[One use] Range equals level. Collect all dropped items in range. Use up to one tile in range.,
-[One use] 5 range deal 1 damage per level., 3+
-[One use] Range 3. Deal 2 damage per level. Take half that damage yourself., 4+
-[One use] Over-heal 1 per level, 2+
-[Trigger] At the beginning of your turn discard this and rearrange your focus bar., 2+
-[One use] Heal all status ailments,
-[One use] Heal 2 per level, 4+
-[One use] Range 4 poison 1 per level., 4+
-[One use] Move equal to level then deal 2 damage to an adjacent player., 2+
-[Instant] Spend up to X crystals where X is double the level. Heal per green. Attack per red. Move per blue., 3+
-[Instant] Gain 3 coins,
-[Instant] Your next attack deals 3 more damage,
-[Instant] Your next mine action gains 4 more coins,
-[Instant] Reserve any item from the item row,
-[Instant] Teleport 4 spaces,
-[Instant] Role 3 hit dice. On 3 hits gain 5 gold
-[One use] You may discard an item to move any action to level 4.,
-[One use] Teleport 3 Hexes in any direction., 1+
-[One use] Teleport up to 5 Hexes in a straight line., 2+
-[One use] Reveal all adjacent tiles., 4+
-[One use] Range 2 per level. Deal 2 damage., 1+
-[One use] Range 1 deal 1 per level. Heal 1 per level., 4+
-[One use] Range 3 poison all enemies 1 per level -1., 2+
-[One use] Over-heal 1 per level., 2+
-[One use] Hit all adjacent hexes. Damage equals double level., 3+
-[One use] Deal 5 damage to one target within 5 hexes., 4+
-[One use] Deal 4 damage at range x where x is level., 3+
-[Trigger] The next action you take gets +2 level (Max 4). Fragile,
-[Trigger] The next time you would die instead your health is 5. Fragile,
-[One use] Range equals level. Collect all dropped items in range. Use up to one tile in range.,
-[One use] 5 range deal 1 damage per level., 3+
-[One use] Range 3. Deal 2 damage per level. Take half that damage yourself., 4+
-[One use] You may discard an item to move any action to level 4.,
-[One use] Teleport 3 Hexes in any direction., 1+
-[One use] Teleport up to 5 Hexes in a straight line., 2+
-[One use] Reveal all adjacent tiles., 4+
-[One use] Deal 5 damage to one target within 5 hexes., 4+
-[One use] Range 2 per level. Deal 2 damage., 1+
-[One use] Range 1 deal 1 per level. Heal 1 per level., 4+
-[One use] Range 3 poison all enemies 1 per level -1., 2+
-[One use] Over-heal 1 per level., 2+
-[One use] Hit all adjacent hexes. Damage equals double level., 3+
-[One use] Deal 5 damage to one target within 5 hexes., 4+
-[One use] Deal 4 damage at range x where x is level., 3+
-[Trigger] The next action you take gets +2 level (Max 4). Fragile,
-[Trigger] The next time you would die instead your health is 5. Fragile,
-[One use] Range equals level. Collect all dropped items in range. Use up to one tile in range.
-[One use] Range 4 poison 1 per level., 4+
-[One use] Move equal to level then deal 2 damage to an adjacent player., 2+
-[Instant] Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 3+
+[One use] Teleport 3 Hexes., 1+
+[One use] Teleport slot level distance.,
+[One use] Teleport slot level distance.,
+[One use] Teleport up to 5 Hexes in a straight line.,4+
+[One use] Explore any number of adjacent tiles., 3+
+[One use] | Snipe | Range 2 per level. Deal 2 damage.,
+[One use] | Snipe | Range 2 per level. Deal 2 damage.,
+[One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
+[One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
+[One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
+[One use] Range 3 poison all enemies 1 per level -1., 
+[One use] Range 2 deal 1 per level. You may spend {Gem:R} to add 2 damage up to twice.,
+[One use] Range equals slot. Poison 3., 
+[One use] Range equals slot. Poison 3., 
+[One use] Over-heal 1 per level., 
+[One use] | Bloodlust | Randomly pick a player. Teleport to any hex adjacent to them., 
+[One use] Hit all adjacent hexes. Damage equals twice level., 
+[One use] Hit all adjacent hexes. Damage equals twice level., 
+[One use] Range 5 deal 5 damage to one target., 4+
+[One use] Range equals level. Deal 4 damage.,
+[One use] Range equals level. Deal 4 damage.,
+[One use] Range equals level. Deal 4 damage.,
+[One use] 5 range deal 1 damage per level., 
+[One use] 5 range deal 1 damage per level., 
+[One use] 5 range inflict daze., 3+
+[One use] The next action you take is treated as +2 slot level., 3+
+[One use] The next action you take is treated as +2 slot level., 3+
+[One use] Range 3. Deal 2 damage per level. Deal 1 damage per level to self., 
+[One use] Range 3. Deal 2 damage per level. Deal 1 damage per level to self., 
+[One use] Range 2. Deal damage equal to slot level to target tile and all adjacent tiles.,
+[One use] Range 2. Deal damage equal to slot level to target tile and all adjacent tiles.,
+[One use] Over-heal 1 per level, 
+[One use] Heal 2 per level, 
+[One use] Heal all status ailments, 2+
+[One use] Heal all status ailments, 2+
+[Trigger] When you would be inflicted with a status effect discard this instead.,
+[Trigger] When you would be inflicted with a status effect discard this instead.,
+[Trigger] When you would are attacked you may discard this and move 1 first. (This can make the attack fail.),
+[One use] Range 4 poison 1 per level., 
+[One use] Move equal to level then deal 2 damage to an adjacent player., 
+[One use] Gain gold equal to double slot level.,
+[One use] Range 1 poison 1 per level. You may spend {Gem:G} to increase slot level up to three times.,
+[One use] | Mortar and Pestle | X=Slot Level. Do one or more: {Gem:G} Heal X {Gem:R} Deal X Range 1 {Gem=B} Move X
+[One use] Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 
+[One use] | Poison Vial | Your next attack this turn inflicts poison instead of damage., 3+
+[Trigger] When you roll {Dice:0} you may discard this to treat any number of those as {Dice:!} instead.,
+[Trigger] At the beginning of your turn discard this and rearrange your focus bar.,
+[Instant] Spend up to 3 crystals. Heal 2 per green. Range 3 Attack 1 per red. Move per blue., 
 [Instant] | Coins | Gain 3 Gold,
-[Instant] Your next attack deals 3 more damage,
-[Instant] Your next mine action gains 4 more coins,
-[Instant] Reserve any item from the item row,
-[Instant] Teleport 4 spaces,
-[Instant] Role 3 hit dice. On 3 hits gain 5 gold
-[One use] Teleport 3 Hexes in any direction.,1+
-[One use] Teleport up to 5 Hexes in a straight line.,2+
-[One Use] Explore all adjacent tiles.,4+
-[One use] Range 2 per level. Deal 2 damage.,1+
-[One use]. Range 1 deal 1 per level. Heal 1 per level.,4+
-[One use] Range 3 poison all enemies 1 per level -1.,2+
-[One use] Over-heal 1 per level.,2+
-[One use] Hit all adjacent hexes. Damage equals double level.,3+
-[One use] Deal 5 damage to one target within 5 hexes.,4+
-[One use] Deal 4 damage at range x where x is level.,3+
-[One use] Range equals level. Collect all dropped items in range. Use up to one tile in range.,
-[One use] 5 range deal 1 damage per level.,3+
-[One use] Range 3. Deal 2 damage per level. Take half that damage yourself.,4+
-[One use] Over-heal 1 per level,2+
-[One use] Heal all status ailments,
-[One use] Heal 2 per level,4+
-[One use] Range 4 poison 1 per level.,4+
-[One use] Move equal to level then deal 2 damage to an adjacent player.,2+
-[Trigger] At the beginning of your turn discard this and rearrange your focus bar.,2+
-[One use] Spend up to X crystals. Use level is max. Heal 2 per {Gem:G}. Attack with level equal to the amount of {Gem:R} without moving your Attack card. Move 1 per {Gem:B}.,3+
+[Instant] | Coins | Gain 3 Gold,
+[Instant] | Coins | Gain 3 Gold,
+[Instant] | Bandaid | Heal 2,
+[Instant] | Bandaid | Heal 2,
+[Instant] | Rage Buff | Your next attack this turn deals 3 more damage,
+[Instant] | Blessing of Iron | Your next mine action gains 4 more coins,
+[Instant] | Merchant's Favor | Reserve any item from the item row,
+[Instant] | Accidental Teleport | Teleport up to 4 spaces in a straight line,
+[Instant] | Gambler's Dice | Roll 3 hit dice. On 3+ hits gain 5 gold.,
+[Instant] | Gem | Gain a gem of your choice.,
