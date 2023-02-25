@@ -1,6 +1,6 @@
 Text,Cost
 +1 Armor (Armor allows you to roll 1 hit die whenever you take damage to reduce the damage.),{Gold:5}
-+1 Armor - When an opponent rolls {Dice:Crit} you may spend {Gem:B} to turn one into {Dice:0},{Gold:7}
++1 Armor - When an opponent rolls {Dice:Crit} you may spend {Gem:B} to turn one into {Dice:Miss},{Gold:7}
 +1 Armor/Max Health +5/Healing-1,{Gold:7}
 +1 Move - When you roll one or more {Dice:!} you may use it to Move 1,{Gold:3}
 +1 Move,{Gold:2}
@@ -40,7 +40,7 @@ May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:6}
 +1 Discover. +1 Use,{Gold:6}
 You may ignore downsides of difficult terrain.,{Gold:3}
 [Passive] | Optimized Magic | Your slot level 4 has +1 to all actions.,{Gold:10}
-[Passive] | Rage Aura | Turn all {Dice:0} into {Dice:Crit},{Gold:3;Gem:R}
+[Passive] | Rage Aura | Turn all {Dice:Miss} into {Dice:Crit},{Gold:3;Gem:R}
 [Craft] | Magic Armor | Fly (May ignore any terrain effects and move through enemies as long as you do not end your move there. Cannot use effects of printed hexes.) +1 Armor,{Gold:9}
 [Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:10}
 [Use] | Freezing Tincure | Your use items also Stun the target if you pay {Gem:B} Fragile (Item is returned to reserve after each use.),{Gold:3}

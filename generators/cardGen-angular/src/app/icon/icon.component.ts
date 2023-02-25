@@ -1,6 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Icon } from '../services/csv.service';
 
+interface CharColor {
+  char?: string,
+  color?: string
+}
+
 @Component({
   selector: 'app-icon',
   templateUrl: './icon.component.html',
@@ -14,7 +19,7 @@ import { Icon } from '../services/csv.service';
 export class IconComponent implements OnInit {
   @Input() icon?: Icon;
   @Input() fontSize: number = 64;
-  public iconChar: string = '';
+  public iconChars: CharColor[] = [];
   public color: string = '#000';
   public displayValue: boolean = false;
   constructor() { }
@@ -22,18 +27,21 @@ export class IconComponent implements OnInit {
   ngOnInit(): void {
     switch(this.icon?.type) {
       case('gem'): {
-        this.iconChar = 'G';
-        this.setGemColor(this.icon.value as string);
+        this.setGems(this.icon.value as string);
         break;
       }
       case('gold'): {
-        this.iconChar = 'B';
-        this.color = '#E1BC29';
+        this.iconChars.push({
+          char: 'B',
+          color: '#E1BC29'
+        }) 
         this.displayValue = true;
         break;
       }
       case('slot'): {
-        this.iconChar = 'S';
+        this.iconChars.push({
+          char: 'S' 
+        })
         this.displayValue = true;
         break;
       }
@@ -43,45 +51,68 @@ export class IconComponent implements OnInit {
       }
     }
   }
-  setDiceSymbol(face: string | number) {
-    switch(face) {
-      case('Crit'): {
-        this.iconChar = 'C';
-        this.color = '#000';
-        break;
+
+  private setDiceSymbol(faces: string) {
+    faces.split('-').forEach((face) => {
+      switch(faces) {
+        case('Crit'): {
+          this.iconChars.push({
+            char:  'C',
+            color: '#000',
+          })
+          break;
+        }
+        case('Hit'): {
+          this.iconChars.push({
+            char:  '~',
+            color: '#000',
+          })
+          break;
+        }
+        case('!'): {
+          this.iconChars.push({
+            char:  '!',
+            color: '#E1BC29',
+          })
+          break;
+        }
+        case('Miss'): {
+          this.iconChars.push({
+            char:  'M',
+            color: '#FB3640',
+          })
+          break;
+        }
       }
-      case('Hit'): {
-        this.iconChar = '~';
-        this.color = '#000';
-        break;
-      }
-      case('!'): {
-        this.iconChar = '!';
-        this.color = '#E1BC29';
-        break;
-      }
-      case(0): {
-        this.iconChar = 'M';
-        this.color = '#FB3640';
-        break;
-      }
-    }
+    })
+
   }
-  setGemColor(value: string): void {
-    switch(value) {
-      case('R'): {
-        this.color = '#FB3640';
-        break;
+
+  private setGems(value: string): void {
+    //Format for value: G,G-R-B
+    value.split('-').forEach((gem) => {
+      let color = '';
+      switch(gem) {
+        case('R'): {
+          color = '#FB3640';
+          break;
+        }
+        case('G'): {
+          color = '#9BC53D';
+          break;
+        }
+        case('B'): {
+          color = '#00A1E4';
+          break;
+        }
       }
-      case('G'): {
-        this.color = '#9BC53D';
-        break;
-      }
-      case('B'): {
-        this.color = '#00A1E4';
-        break;
-      }
-    }
+
+      this.iconChars.push({
+        char: 'G',
+        color
+      })
+    })
+    
   }
 
 }

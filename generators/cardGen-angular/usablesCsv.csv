@@ -44,7 +44,7 @@ Text,Slot
 [One use] | Mortar and Pestle | X=Slot Level. Do one or more: {Gem:G} Heal X {Gem:R} Deal X Range 1 {Gem:B} Move X,
 [One use] Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 
 [One use] | Poison Vial | Your next attack this turn inflicts poison instead of damage., 3+
-[Trigger] When you roll {Dice:0} you may discard this to treat any number of those as {Dice:!} instead.,
+[Trigger] When you roll {Dice:Miss} you may discard this to treat any number of those as {Dice:!} instead.,
 [Trigger] At the beginning of your turn discard this and rearrange your focus bar.,
 [Instant] Spend up to 3 crystals. Heal 2 per green. Range 3 Attack 1 per red. Move per blue., 
 [Instant] | Coins | Gain 3 Gold,
