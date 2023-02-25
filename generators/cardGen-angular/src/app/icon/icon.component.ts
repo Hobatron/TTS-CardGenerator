@@ -20,7 +20,6 @@ export class IconComponent implements OnInit {
   @Input() icon?: Icon;
   @Input() fontSize: number = 64;
   public iconChars: CharColor[] = [];
-  public color: string = '#000';
   public displayValue: boolean = false;
   constructor() { }
 

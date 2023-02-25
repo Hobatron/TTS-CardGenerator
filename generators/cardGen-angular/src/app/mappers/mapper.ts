@@ -12,7 +12,7 @@ export class Mapper {
         keyValues.reverse().forEach(kv => { //.reverse() since they float right, this keeps them in order typed
           cost.push({
             type: kv[0].toLowerCase() as 'gem' | 'gold' | 'slot',
-            value: isNaN(parseInt(kv[1])) ? kv[1] : parseInt(kv[1])
+            value: kv[1]
           });
         });
     

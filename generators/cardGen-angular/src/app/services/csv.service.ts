@@ -118,7 +118,7 @@ export class CsvService {
 
 export interface Icon {
   type: 'gem' | 'gold' | 'slot' | 'dice'
-  value: number | string
+  value: string
 }
 
 export interface Equipment {

@@ -1,9 +1,9 @@
 Text,Slot
-[One use] Teleport 3 Hexes., 1+
+[One use] Teleport 3 Hexes., {Slot:1}
 [One use] Teleport slot level distance.,
 [One use] Teleport slot level distance.,
-[One use] Teleport up to 5 Hexes in a straight line.,4+
-[One use] Explore any number of adjacent tiles., 3+
+[One use] Teleport up to 5 Hexes in a straight line.,{Slot:4}
+[One use] Explore any number of adjacent tiles., {Slot:3}
 [One use] | Snipe | Range 2 per level. Deal 2 damage.,
 [One use] | Snipe | Range 2 per level. Deal 2 damage.,
 [One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
@@ -17,23 +17,23 @@ Text,Slot
 [One use] | Bloodlust | Randomly pick a player. Teleport to any hex adjacent to them., 
 [One use] Hit all adjacent hexes. Damage equals twice level., 
 [One use] Hit all adjacent hexes. Damage equals twice level., 
-[One use] Range 5 deal 5 damage to one target., 4+
+[One use] Range 5 deal 5 damage to one target., {Slot:4}
 [One use] Range equals level. Deal 4 damage.,
 [One use] Range equals level. Deal 4 damage.,
 [One use] Range equals level. Deal 4 damage.,
 [One use] 5 range deal 1 damage per level., 
 [One use] 5 range deal 1 damage per level., 
-[One use] 5 range inflict daze., 3+
-[One use] The next action you take is treated as +2 slot level., 3+
-[One use] The next action you take is treated as +2 slot level., 3+
+[One use] 5 range inflict daze., {Slot:3}
+[One use] The next action you take is treated as +2 slot level., {Slot:3}
+[One use] The next action you take is treated as +2 slot level., {Slot:3}
 [One use] Range 3. Deal 2 damage per level. Deal 1 damage per level to self., 
 [One use] Range 3. Deal 2 damage per level. Deal 1 damage per level to self., 
 [One use] Range 2. Deal damage equal to slot level to target tile and all adjacent tiles.,
 [One use] Range 2. Deal damage equal to slot level to target tile and all adjacent tiles.,
 [One use] Over-heal 1 per level, 
 [One use] Heal 2 per level, 
-[One use] Heal all status ailments, 2+
-[One use] Heal all status ailments, 2+
+[One use] Heal all status ailments, {Slot:2}
+[One use] Heal all status ailments, {Slot:2}
 [Trigger] When you would be inflicted with a status effect discard this instead.,
 [Trigger] When you would be inflicted with a status effect discard this instead.,
 [Trigger] When you would are attacked you may discard this and move 1 first. (This can make the attack fail.),
@@ -43,7 +43,7 @@ Text,Slot
 [One use] Range 1 poison 1 per level. You may spend {Gem:G} to increase slot level up to three times.,
 [One use] | Mortar and Pestle | X=Slot Level. Do one or more: {Gem:G} Heal X {Gem:R} Deal X Range 1 {Gem:B} Move X,
 [One use] Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 
-[One use] | Poison Vial | Your next attack this turn inflicts poison instead of damage., 3+
+[One use] | Poison Vial | Your next attack this turn inflicts poison instead of damage., {Slot:3}
 [Trigger] When you roll {Dice:Miss} you may discard this to treat any number of those as {Dice:!} instead.,
 [Trigger] At the beginning of your turn discard this and rearrange your focus bar.,
 [Instant] Spend up to 3 crystals. Heal 2 per green. Range 3 Attack 1 per red. Move per blue., 
