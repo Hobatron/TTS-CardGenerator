@@ -5,6 +5,7 @@ Make sure zoom is set to 100%, as it affects the image size
 <div>
     <div [ngStyle]="this.sheetStyle" id="image-section">
         <app-card-main *ngFor="let usable of loadedUsables$ | async"
+            [costs]="usable.slot"
             [type]="usable.type"
             [name]="usable.name"
             [rules]="usable.rules"    

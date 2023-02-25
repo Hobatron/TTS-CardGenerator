@@ -1,4 +1,4 @@
-<span *ngIf="this.displayValue">{{this.icon?.value}}x</span>
+<span *ngIf="this.displayValue">{{this.icon?.value}} {{this.displayValue}}</span>
 <ng-container *ngFor="let char of iconChars">
     <span [ngStyle]="{'color': this.char.color}" class="icon-font">{{this.char.char}}</span>
 </ng-container>

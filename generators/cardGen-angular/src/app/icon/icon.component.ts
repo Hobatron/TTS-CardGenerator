@@ -20,11 +20,11 @@ export class IconComponent implements OnInit {
   @Input() icon?: Icon;
   @Input() fontSize: number = 64;
   public iconChars: CharColor[] = [];
-  public displayValue: boolean = false;
+  public displayValue = '';
   constructor() { }
 
   ngOnInit(): void {
-    switch(this.icon?.type) {
+    switch(this.icon?.type.trim()) {
       case('gem'): {
         this.setGems(this.icon.value as string);
         break;
@@ -34,14 +34,13 @@ export class IconComponent implements OnInit {
           char: 'B',
           color: '#E1BC29'
         }) 
-        this.displayValue = true;
+        this.displayValue = 'x';
         break;
       }
       case('slot'): {
-        this.iconChars.push({
-          char: 'S' 
-        })
-        this.displayValue = true;
+        console.log(this.icon?.value);
+        
+        this.displayValue = '+';
         break;
       }
       case('dice'): {

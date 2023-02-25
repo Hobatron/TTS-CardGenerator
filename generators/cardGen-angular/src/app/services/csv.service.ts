@@ -66,7 +66,7 @@ export class CsvService {
           let slot = cols[1];
 
           usables.push({
-            slot: slot,
+            slot: this.mapper.cost(slot),
             name: name ? name[0] : undefined,
             rules: rules,
             type: type ? type[0] : undefined
@@ -130,7 +130,7 @@ export interface Equipment {
 
 export interface Usable {
   name: string | undefined;
-  slot: string | undefined;
+  slot: Icon[] | undefined;
   type: string | undefined;
   rules: string | undefined;
 }
