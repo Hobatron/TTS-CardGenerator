@@ -8,11 +8,12 @@ import { Mapper } from '../mappers/mapper';
   providedIn: 'root'
 })
 export class CsvService {
-  equipment$: Observable<Equipment[]> | undefined;
-  usable$: Observable<Usable[]> | undefined;
+  equipments$: Observable<Equipment[]> | undefined;
+  usables$: Observable<Usable[]> | undefined;
   mapper: Mapper = new Mapper();
   constructor() { 
-    this.equipment$ = defer(() => from(this.getEquipmentCSV()))
+    this.equipments$ = defer(() => from(this.getEquipmentCSV()))
+    this.usables$ = defer(() => from(this.getUsableCSV()))
   }
 
   getEquipmentCSV() {
@@ -36,7 +37,7 @@ export class CsvService {
     const octokit = new Octokit({
       auth: environment.github
     });
-
+    
     return octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'Hobatron',
       repo: 'TTS-CardGenerator',
@@ -49,8 +50,31 @@ export class CsvService {
     });
   }
 
-  private castToUsables(glob: any): any {
+  private castToUsables(glob: string): any {
+    let usables: Usable[] = [];
+    
+    if(glob) {
+      const rows = glob.split('\n');
+      delete rows[0];
+      rows.forEach(row => {
+        const cols = row.match(/(\\.|[^,])+/g);
+        if (cols?.length && cols?.length <= 2) {
+          let type = cols[0].match(/(?<=\[)(.*?)(?=\])/g) as any; // returns anything in [] i.e. [Attack/Mine]
+          let name = cols[0].match(/(?<=\|)(.*?)(?=\|)/g) as any; // returns anything in || i.e. |My Magic Item|
+          let noTypes = cols[0].split(']')[cols[0].split(']').length - 1]; // returns everything after any []
+          let rules = noTypes?.split('|')[noTypes.split('|').length - 1]; // returns everything after any ||
+          let slot = cols[1];
 
+          usables.push({
+            slot: slot,
+            name: name ? name[0] : undefined,
+            rules: rules,
+            type: type ? type[0] : undefined
+          }) 
+        }
+      })
+    }
+    return usables
   }
 
   private castToEquipment(glob: string): any {
@@ -106,6 +130,7 @@ export interface Equipment {
 export interface Usable {
   name: string | undefined;
   slot: string | undefined;
+  type: string | undefined;
   rules: string | undefined;
 }
 

@@ -41,7 +41,7 @@ Text,Slot
 [One use] Move equal to level then deal 2 damage to an adjacent player., 
 [One use] Gain gold equal to double slot level.,
 [One use] Range 1 poison 1 per level. You may spend {Gem:G} to increase slot level up to three times.,
-[One use] | Mortar and Pestle | X=Slot Level. Do one or more: {Gem:G} Heal X {Gem:R} Deal X Range 1 {Gem=B} Move X,
+[One use] | Mortar and Pestle | X=Slot Level. Do one or more: {Gem:G} Heal X {Gem:R} Deal X Range 1 {Gem:B} Move X,
 [One use] Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 
 [One use] | Poison Vial | Your next attack this turn inflicts poison instead of damage., 3+
 [Trigger] When you roll {Dice:0} you may discard this to treat any number of those as {Dice:!} instead.,

@@ -1,0 +1,14 @@
+Make sure zoom is set to 100%, as it affects the image size
+<br>
+<button type="button" (click)="appendImage()">Convert to Image</button>
+<button type="button" (click)="generateImage()">Download as Png</button>
+<div>
+    <div [ngStyle]="this.sheetStyle" id="image-section">
+        <app-card-main *ngFor="let usable of loadedUsables$ | async"
+            [type]="usable.type"
+            [name]="usable.name"
+            [rules]="usable.rules"    
+        >
+        </app-card-main>
+    </div>
+</div>

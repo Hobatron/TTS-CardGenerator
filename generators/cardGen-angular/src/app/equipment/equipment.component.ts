@@ -23,8 +23,7 @@ export class EquipmentComponent implements OnInit {
   constructor(private csvService: CsvService) { }
 
   ngOnInit(): void {
-    this.loadedEquipment$ = this.csvService.equipment$;
-    
+    this.loadedEquipment$ = this.csvService.equipments$;
   }
   
   appendImage(){
