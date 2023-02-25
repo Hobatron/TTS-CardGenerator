@@ -1,9 +1,7 @@
 <div [ngStyle]="this.cardStyle">
     <div class="inner-card">
         <div class="spacing">
-            <div *ngIf="this.type; else noType" class="type">
-                <span class="inner-type">{{this.type}}</span>
-            </div>
+            <div *ngIf="this.type; else noType" class="type">{{this.type}}</div>
             <ng-template #noType>&nbsp;</ng-template>
             <div>
                 <span class="name">{{this.name}}&nbsp;</span>

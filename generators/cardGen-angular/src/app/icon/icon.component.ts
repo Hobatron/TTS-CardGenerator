@@ -19,7 +19,7 @@ interface CharColor {
 export class IconComponent implements OnInit {
   @Input() icon?: Icon;
   @Input() fontSize: number = 64;
-  public iconChars: CharColor[] = [];
+  public iconChars: Array<CharColor> = new Array;
   public displayValue = '';
   constructor() { }
 
@@ -34,12 +34,10 @@ export class IconComponent implements OnInit {
           char: 'B',
           color: '#E1BC29'
         }) 
-        this.displayValue = 'x';
+        this.displayValue = this.icon?.value + 'x';
         break;
       }
       case('slot'): {
-        console.log(this.icon?.value);
-        
         this.displayValue = '+';
         break;
       }
@@ -51,8 +49,10 @@ export class IconComponent implements OnInit {
   }
 
   private setDiceSymbol(faces: string) {
+    const test = faces.split('-').length;
+    
     faces.split('-').forEach((face) => {
-      switch(faces) {
+      switch(face) {
         case('Crit'): {
           this.iconChars.push({
             char:  'C',
@@ -62,7 +62,7 @@ export class IconComponent implements OnInit {
         }
         case('Hit'): {
           this.iconChars.push({
-            char:  '~',
+            char:  'H',
             color: '#000',
           })
           break;
@@ -83,7 +83,7 @@ export class IconComponent implements OnInit {
         }
       }
     })
-
+    
   }
 
   private setGems(value: string): void {

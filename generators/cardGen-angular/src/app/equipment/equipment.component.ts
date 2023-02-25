@@ -24,9 +24,14 @@ export class EquipmentComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadedEquipment$ = this.csvService.equipments$;
+    this.csvService.equipments$?.subscribe((v) => {
+      if(v) {
+        setTimeout(this.appendImage, 200)
+      }
+    });
   }
   
-  appendImage(){
+  appendImage() {
     var node:HTMLElement = document.getElementById('image-section') ?? new HTMLElement();
     htmlToImage.toPng(node, {
       backgroundColor: '#000'
