@@ -43,7 +43,7 @@ Text,Cost
 [Passive] | Magic Armor | Fly (May ignore any terrain effects and move through enemies as long as you do not end your move there. Cannot use effects of printed hexes.) +1 Armor,{Gold:9}
 [Discover/Use] You may use 2 items when you take this action.,{Gold:8}
 [Move] Teleport instead. (Teleport ignores all terrain and obstacles except the hex you end on.),{Gold:5}
-[Attack/Mine]: Stun. +2 damage if used in slot 4. Fragile (Item is returned to reserve after each use.),{Gold:2}
+[Attack/Mine] Stun. +2 damage if used in slot 4. Fragile (Item is returned to reserve after each use.),{Gold:2}
 [Discover/Use] Once per turn you may discard an Item to discover a second time at the same level. (Hex effects do not apply to the second discover.),{Gold:6}
 [Attack/Mine] You cannot attack adjacent tiles. +2 Range +2 Attack.,{Gold:9;Gem:G}
 [Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:10}
