@@ -38,7 +38,7 @@ export class IconComponent implements OnInit {
         break;
       }
       case('slot'): {
-        this.displayValue = '+';
+        this.displayValue = this.icon?.value + '+';
         break;
       }
       case('dice'): {
@@ -49,8 +49,6 @@ export class IconComponent implements OnInit {
   }
 
   private setDiceSymbol(faces: string) {
-    const test = faces.split('-').length;
-    
     faces.split('-').forEach((face) => {
       switch(face) {
         case('Crit'): {
