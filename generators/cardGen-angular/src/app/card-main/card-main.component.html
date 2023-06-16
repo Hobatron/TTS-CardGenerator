@@ -1,19 +1,19 @@
 <div [ngStyle]="this.cardStyle">
-    <div class="inner-card">
-        <div class="spacing">
-            <div *ngIf="this.type; else noType" class="type">{{this.type}}</div>
-            <ng-template #noType>&nbsp;</ng-template>
-            <div>
-                <span class="name">{{this.name}}&nbsp;</span>
-                <div class="cost" *ngFor="let cost of this.costs">
-                    <app-icon [icon]="cost"></app-icon>
-                </div>
-            </div>
-            <div class="card-image"></div>
-            <div class="rules">
-                <app-rules-text [rules]="this.rules">
-                </app-rules-text>
-            </div>
+  <div class="inner-card">
+    <div class="spacing">
+      <div *ngIf="this.type; else noType" class="type">{{ this.type }}</div>
+      <ng-template #noType>&nbsp;</ng-template>
+      <div>
+        <span class="name">{{ this.name }}&nbsp;</span>
+        <div class="cost" *ngFor="let cost of this.costs">
+          <app-icon [icon]="cost"></app-icon>
         </div>
+      </div>
+      <div class="card-image"></div>
+      <div class="rules">
+        <app-rules-text [fontSize]="this.fontSize" [rules]="this.rules">
+        </app-rules-text>
+      </div>
     </div>
+  </div>
 </div>
