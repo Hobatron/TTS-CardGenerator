@@ -9,6 +9,9 @@ import { CsvService } from './services/csv.service';
 import { UsablesComponent } from './usables/usables.component';
 import { IconComponent } from './icon/icon.component';
 import { RulesTextComponent } from './rules-text/rules-text.component';
+import { TilesComponent } from './tiles/tiles.component';
+import { HexComponent } from './tiles/hex/hex.component';
+import { TileComponent } from './tiles/tile/tile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { RulesTextComponent } from './rules-text/rules-text.component';
     EquipmentComponent,
     UsablesComponent,
     IconComponent,
-    RulesTextComponent
+    RulesTextComponent,
+    TilesComponent,
+    HexComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule,
