@@ -33,6 +33,7 @@ export class Tile {
 		monster: 1.5,
 		discover: 2,
 		mine: 1.5,
+		heal: 0.5,
 		gem: 1,
 	};
 
