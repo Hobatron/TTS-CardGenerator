@@ -3,4 +3,27 @@
 	[ngStyle]="{
 		'background-image': 'url(/assets/tileImages/' + this.bgUrl + '.png)'
 	}"
-></div>
+>
+	<div class="center">
+		<ng-container [ngSwitch]="this.hex.bonus">
+			<ng-container *ngSwitchCase="Bonus.Discover">
+				<app-discover-svg></app-discover-svg>
+			</ng-container>
+			<ng-container *ngSwitchCase="Bonus.Monster">
+				<app-fight-svg></app-fight-svg>
+			</ng-container>
+			<ng-container *ngSwitchCase="Bonus.Gem">
+				<app-gem-svg></app-gem-svg>
+			</ng-container>
+			<ng-container *ngSwitchCase="Bonus.Mine">
+				<app-mine-svg></app-mine-svg>
+			</ng-container>
+			<ng-container *ngSwitchCase="Bonus.Heal">
+				<app-heal-svg></app-heal-svg>
+			</ng-container>
+			<ng-container *ngSwitchDefault>
+				<!-- No component to display -->
+			</ng-container>
+		</ng-container>
+	</div>
+</div>

@@ -13,6 +13,11 @@ import { TilesComponent } from './tiles/tiles.component';
 import { HexComponent } from './tiles/tile-page/tile/hex/hex.component';
 import { TileComponent } from './tiles/tile-page/tile/tile.component';
 import { TilePageComponent } from './tiles/tile-page/tile-page.component';
+import { FightSvgComponent } from './svgs/fight-svg/fight-svg.component';
+import { GemSvgComponent } from './svgs/gem-svg/gem-svg.component';
+import { DiscoverSvgComponent } from './svgs/discover-svg/discover-svg.component';
+import { MineSvgComponent } from './svgs/mine-svg/mine-svg.component';
+import { HealSvgComponent } from './svgs/heal-svg/heal-svg.component';
 
 @NgModule({
 	declarations: [
@@ -26,6 +31,11 @@ import { TilePageComponent } from './tiles/tile-page/tile-page.component';
 		HexComponent,
 		TileComponent,
 		TilePageComponent,
+  FightSvgComponent,
+  GemSvgComponent,
+  DiscoverSvgComponent,
+  MineSvgComponent,
+  HealSvgComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [CsvService],

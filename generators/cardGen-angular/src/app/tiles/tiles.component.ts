@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tile } from './models';
+import { Bonus, Tile } from './tiles.model';
 
 @Component({
 	selector: 'app-tiles',

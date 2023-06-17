@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Hex, Terrain } from 'src/app/tiles/models';
+import { Bonus, Hex, Terrain } from 'src/app/tiles/tiles.model';
 
 @Component({
 	selector: 'app-hex',
@@ -8,32 +8,35 @@ import { Hex, Terrain } from 'src/app/tiles/models';
 })
 export class HexComponent implements OnInit {
 	@Input() hex!: Hex;
-
+	public Bonus = Bonus;
 	get bgUrl() {
 		let terrain = '';
 		switch (this.hex?.terrain) {
-			case Terrain.lava: {
+			case Terrain.Lava: {
 				terrain = 'lava';
 				break;
 			}
-			case Terrain.water: {
+			case Terrain.Water: {
 				terrain = 'water';
 				break;
 			}
-			case Terrain.roughTerrain: {
+			case Terrain.RoughTerrain: {
 				terrain = 'roughTerrain';
 				break;
 			}
 			default: {
-				terrain = 'grass';
+				if (this.hex.bonus == Bonus.Teleport) {
+					terrain = 'teleporter';
+				} else {
+					terrain = 'grass';
+				}
 				break;
 			}
 		}
 		return terrain;
 	}
+
 	constructor() {}
 
-	ngOnInit(): void {
-		console.log(this.hex);
-	}
+	ngOnInit(): void {}
 }
