@@ -1,0 +1,28 @@
+.hex {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	width: 405px;
+	height: 351px; /* width * 0.866 */
+	background-image: url("/assets/tileImages/lava.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-sizing: border-box;
+	-webkit-clip-path: polygon(
+		0% 50%,
+		25% 0%,
+		75% 0%,
+		100% 50%,
+		75% 100%,
+		25% 100%
+	);
+	-moz-clip-path: polygon(
+		0% 50%,
+		25% 0%,
+		75% 0%,
+		100% 50%,
+		75% 100%,
+		25% 100%
+	);
+}

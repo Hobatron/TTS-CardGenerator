@@ -1,0 +1,23 @@
+// Define hexagon-related variables
+$hexagonTotalWidth: 405px;
+$hexagonSideLength: $hexagonTotalWidth / 2;
+$hexagonHeight: 350.74px; // Calculated value: $hexagonSideLength * sqrt(3)
+$hexagonVerticalGap: $hexagonHeight / 4;
+
+.hex1 {
+	position: relative;
+}
+.hex2 {
+	position: relative;
+	top: -$hexagonHeight / 2;
+	left: $hexagonTotalWidth / 2 + $hexagonSideLength / 2;
+}
+.hex3 {
+	position: relative;
+	top: -$hexagonHeight;
+}
+.hex4 {
+	position: relative;
+	top: -$hexagonHeight / 2 + -$hexagonHeight * 2;
+	right: $hexagonTotalWidth / 2 + $hexagonSideLength / 2;
+}

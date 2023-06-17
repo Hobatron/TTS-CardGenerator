@@ -1,15 +1,43 @@
 import { Component, OnInit } from '@angular/core';
+import { Tile } from './models';
 
 @Component({
-  selector: 'app-tiles',
-  templateUrl: './tiles.component.html',
-  styleUrls: ['./tiles.component.scss']
+	selector: 'app-tiles',
+	templateUrl: './tiles.component.html',
+	styleUrls: ['./tiles.component.scss'],
 })
-export class TilesComponent implements OnInit {
+export class TilesComponent {
+	private monsterCount = 15;
+	private teleporterCount = 8;
+	private tileCount = 44; //multipe of 11
+	private tilesPerPage = 11;
+	private tiles: Tile[] = [];
 
-  constructor() { }
+	tilesArray: Tile[][] = [];
 
-  ngOnInit(): void {
-  }
+	constructor() {
+		this.generateTileJson();
+		for (let i = 0; i < this.tiles.length / this.tilesPerPage; i++) {
+			this.tilesArray[i] = this.tiles.slice(
+				i * this.tilesPerPage,
+				i * this.tilesPerPage + this.tilesPerPage
+			);
+		}
+	}
 
+	generateTileJson() {
+		this.genereateTiles(false, true, this.monsterCount);
+		this.genereateTiles(true, false, this.teleporterCount);
+		this.genereateTiles(
+			false,
+			false,
+			this.tileCount - this.teleporterCount - this.monsterCount
+		);
+	}
+
+	genereateTiles(isTeleporters: boolean, isMonsters: boolean, count: number) {
+		for (let i = 0; i < count; i++) {
+			this.tiles.push(new Tile(isTeleporters, isMonsters));
+		}
+	}
 }

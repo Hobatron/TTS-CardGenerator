@@ -1,0 +1,72 @@
+// Define hexagon-related variables
+$hexagonTotalWidth: 405px;
+$hexagonSideLength: $hexagonTotalWidth / 2;
+$hexagonHeight: 350.74px; // Calculated value: $hexagonSideLength * sqrt(3)
+$hexagonVerticalGap: $hexagonHeight / 4;
+
+$v-title-gap: 40px;
+$v-tile-spacing: $hexagonHeight * 4;
+$h-rotated-tile-spacing: 450px;
+$h-flat-tile-spacing: 700px;
+$h-tile-spacing: $h-rotated-tile-spacing + $hexagonTotalWidth * 1.6;
+.tile1 {
+	transform: rotate(-60deg);
+	position: relative;
+	left: $h-rotated-tile-spacing;
+}
+.tile2 {
+	transform: rotate(-60deg);
+	position: relative;
+	top: -$v-tile-spacing;
+	left: $h-tile-spacing;
+}
+.tile3 {
+	transform: rotate(-60deg);
+	position: relative;
+	top: -$v-tile-spacing * 2 + $hexagonHeight * 2 + $v-title-gap;
+	right: -$h-rotated-tile-spacing;
+}
+.tile4 {
+	position: relative;
+	transform: rotate(-60deg);
+	top: -$v-tile-spacing * 3 + $hexagonHeight * 2 + $v-title-gap;
+	left: $h-tile-spacing;
+}
+.tile5 {
+	position: relative;
+	transform: rotate(-60deg);
+	top: -$v-tile-spacing * 3 + $v-title-gap * 2;
+	left: $h-tile-spacing;
+}
+.tile6 {
+	position: relative;
+	transform: rotate(-60deg);
+	top: -$v-tile-spacing * 4 + $v-title-gap * 2;
+	left: $h-rotated-tile-spacing;
+}
+.tile7 {
+	position: relative;
+	top: -$v-tile-spacing * 6 + $v-title-gap * 2 + $v-title-gap * 2;
+	left: -$h-flat-tile-spacing;
+}
+.tile8 {
+	position: relative;
+	top: -$v-tile-spacing * 6 - $hexagonHeight * 2 + $v-title-gap * 5;
+	left: -$h-flat-tile-spacing;
+}
+.tile9 {
+	position: relative;
+	top: -$v-tile-spacing * 6 - $hexagonHeight * 4 + $v-title-gap * 6;
+	left: -$h-flat-tile-spacing;
+}
+.tile10 {
+	position: relative;
+	top: -$v-tile-spacing * 7 - $hexagonHeight * 2 + $v-title-gap * 7;
+	left: -$h-flat-tile-spacing;
+}
+.tile11 {
+	position: relative;
+	top: -$v-tile-spacing * 8 - $hexagonHeight * 2 + $v-title-gap * 7 -
+		$v-title-gap - 15px;
+	left: $h-flat-tile-spacing - $hexagonTotalWidth + $v-title-gap - 15px;
+}

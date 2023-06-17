@@ -1,1 +1,5 @@
-<p>tiles works!</p>
+<div *ngFor="let tiles of tilesArray">
+	<div class="tile-page">
+		<app-tile-page [tiles]="tiles"></app-tile-page>
+	</div>
+</div>

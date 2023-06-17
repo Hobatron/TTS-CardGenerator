@@ -10,26 +10,25 @@ import { UsablesComponent } from './usables/usables.component';
 import { IconComponent } from './icon/icon.component';
 import { RulesTextComponent } from './rules-text/rules-text.component';
 import { TilesComponent } from './tiles/tiles.component';
-import { HexComponent } from './tiles/hex/hex.component';
-import { TileComponent } from './tiles/tile/tile.component';
+import { HexComponent } from './tiles/tile-page/tile/hex/hex.component';
+import { TileComponent } from './tiles/tile-page/tile/tile.component';
+import { TilePageComponent } from './tiles/tile-page/tile-page.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CardMainComponent,
-    EquipmentComponent,
-    UsablesComponent,
-    IconComponent,
-    RulesTextComponent,
-    TilesComponent,
-    HexComponent,
-    TileComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [CsvService],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		CardMainComponent,
+		EquipmentComponent,
+		UsablesComponent,
+		IconComponent,
+		RulesTextComponent,
+		TilesComponent,
+		HexComponent,
+		TileComponent,
+		TilePageComponent,
+	],
+	imports: [BrowserModule, AppRoutingModule],
+	providers: [CsvService],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
