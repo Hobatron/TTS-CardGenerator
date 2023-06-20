@@ -1,29 +1,19 @@
+@use "sass:math";
+// Define hexagon-related variables
+$hexagonTotalWidth: 395px;
+$hexagonSideLength: $hexagonTotalWidth / 2;
+$hexagonHeight: calc($hexagonSideLength * math.sqrt(3));
+$hexagonVerticalGap: $hexagonHeight / 4;
+
 .hex {
 	display: block;
-	margin: 0 auto;
-	position: relative;
-	width: 405px;
-	height: 350.74px; /* width * 0.866 */
+	margin: auto;
+	width: $hexagonTotalWidth;
+	height: $hexagonHeight; /* width * 0.866 */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	box-sizing: border-box;
-	-webkit-clip-path: polygon(
-		0% 50%,
-		25% 0%,
-		75% 0%,
-		100% 50%,
-		75% 100%,
-		25% 100%
-	);
-	-moz-clip-path: polygon(
-		0% 50%,
-		25% 0%,
-		75% 0%,
-		100% 50%,
-		75% 100%,
-		25% 100%
-	);
+	clip-path: inherit;
 }
 
 .center {

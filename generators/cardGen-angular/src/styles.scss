@@ -1,17 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family: 'icon-pack';
-    src: url('assets/fonts/Tts_icons-Regular.ttf');
+	font-family: "icon-pack";
+	src: url("assets/fonts/Tts_icons-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Liberation';
-    src: url('assets/fonts/LiberationMono-Bold.ttf');
+	font-family: "Liberation";
+	src: url("assets/fonts/LiberationMono-Bold.ttf");
 }
 
-body { 
-    // font-family: 'Liberation';
-    font-family: 'Teko', sans-serif;
-    font-size: 48px;
-    background: #c5c5c5;
+body {
+	// font-family: 'Liberation';
+	font-family: "Teko", sans-serif;
+	font-size: 48px;
+	background: #c5c5c5;
+}
+
+svg {
+	filter: drop-shadow(2px 5px 5px hwb(0 0% 100%));
 }

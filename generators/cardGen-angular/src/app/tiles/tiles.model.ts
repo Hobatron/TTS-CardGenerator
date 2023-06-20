@@ -28,9 +28,9 @@ export class Tile {
 	isMonster: any;
 
 	private weightValues = {
-		water: -1,
-		lava: -1.25,
-		roughTerrain: -0.75,
+		water: -0.8,
+		lava: -1,
+		roughTerrain: -0.55,
 		teleporter: 0.25,
 		monster: 1.5,
 		discover: 2,
@@ -70,6 +70,7 @@ export class Tile {
 				console.log('a tile has failed');
 			}
 		}
+		this.hexes = this.shuffleArray(this.hexes);
 	}
 
 	addBaseBonuses() {
@@ -85,12 +86,12 @@ export class Tile {
 		let hexTerrain = Terrain.None;
 		let hexBonus = Bonus.None;
 		//half the time pick a terrain (half terrains have a chance to get a bonus [none/roughTerrain])
-		if (Math.random() < 0.5) {
+		if (Math.random() < 0.65) {
 			hexTerrain = Math.floor(Math.random() * 4);
 		}
 		if (hexTerrain == Terrain.None || hexTerrain == Terrain.RoughTerrain) {
 			//keep some tiles blank
-			if (Math.random() < 0.65) {
+			if (Math.random() < 0.4) {
 				//Hex bonus CAN'T be teleport, none, or monster
 				hexBonus = Math.floor(Math.random() * 4) + 3;
 			}
@@ -146,5 +147,13 @@ export class Tile {
 		}
 
 		this.currentWeight += weight;
+	}
+
+	shuffleArray(hexes: Hex[]): Hex[] {
+		for (let i = hexes.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[hexes[i], hexes[j]] = [hexes[j], hexes[i]];
+		}
+		return hexes;
 	}
 }

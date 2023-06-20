@@ -1,23 +1,35 @@
-// Define hexagon-related variables
-$hexagonTotalWidth: 405px;
-$hexagonSideLength: $hexagonTotalWidth / 2;
-$hexagonHeight: 350.74px; // Calculated value: $hexagonSideLength * sqrt(3)
-$hexagonVerticalGap: $hexagonHeight / 4;
+@import "../hex-vars.scss";
 
 .hex1 {
-	position: relative;
+	width: fit-content;
 }
 .hex2 {
 	position: relative;
 	top: -$hexagonHeight / 2;
-	left: $hexagonTotalWidth / 2 + $hexagonSideLength / 2;
+	left: $hexagonTotalWidth / 2 + $hexagonSideLength / 2 - $hexagonBorder;
 }
 .hex3 {
 	position: relative;
-	top: -$hexagonHeight;
+	top: -$hexagonHeight - $hexagonBorder;
 }
 .hex4 {
 	position: relative;
-	top: -$hexagonHeight / 2 + -$hexagonHeight * 2;
-	right: $hexagonTotalWidth / 2 + $hexagonSideLength / 2;
+	top: -$hexagonHeight / 2 + -$hexagonHeight * 2 - $hexagonBorder;
+	right: $hexagonTotalWidth / 2 + $hexagonSideLength / 2 - $hexagonBorder;
+}
+
+.hexes {
+	display: grid;
+	margin: auto;
+	width: fit-content;
+	background: black;
+	border: $hexagonBorder solid black;
+	-webkit-clip-path: polygon(
+		0% 50%,
+		25% 0%,
+		75% 0%,
+		100% 50%,
+		75% 100%,
+		25% 100%
+	);
 }
