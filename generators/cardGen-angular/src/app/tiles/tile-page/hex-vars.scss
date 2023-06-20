@@ -1,7 +1,9 @@
 @use "sass:math";
+
 // Define hexagon-related variables
 $hexagonTotalWidth: 415px;
 $hexagonBorder: 10px;
 $hexagonSideLength: $hexagonTotalWidth / 2;
 $hexagonHeight: calc($hexagonSideLength * math.sqrt(3));
 $hexagonVerticalGap: $hexagonHeight / 4;
+$hexagonRotationGap: ($hexagonHeight - $hexagonTotalWidth) / 2;

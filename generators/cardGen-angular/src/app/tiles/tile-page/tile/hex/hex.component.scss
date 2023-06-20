@@ -1,9 +1,9 @@
 @use "sass:math";
+@import "../../hex-vars.scss";
 // Define hexagon-related variables
-$hexagonTotalWidth: 395px;
-$hexagonSideLength: $hexagonTotalWidth / 2;
-$hexagonHeight: calc($hexagonSideLength * math.sqrt(3));
-$hexagonVerticalGap: $hexagonHeight / 4;
+//remove the hexagonBorder, for the icon
+$hexagonTotalWidth: $hexagonTotalWidth - $hexagonBorder * 2;
+$hexagonHeight: calc($hexagonTotalWidth / 2 * math.sqrt(3));
 
 .hex {
 	display: block;
