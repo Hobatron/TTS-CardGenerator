@@ -1,10 +1,16 @@
 @import "./hex-vars.scss";
 
-$v-title-gap: 40px;
+$v-title-gap: 15px;
 $v-tile-spacing: $hexagonHeight * 4;
 $h-rotated-tile-spacing: 450px;
 $h-flat-tile-spacing: 700px;
 $h-tile-spacing: $h-rotated-tile-spacing + $hexagonTotalWidth * 1.6;
+
+.all-tiles {
+	position: relative;
+	top: -$v-title-gap * 1.5;
+}
+
 .tile1 {
 	transform: rotate(-60deg);
 	position: relative;
@@ -62,7 +68,6 @@ $h-tile-spacing: $h-rotated-tile-spacing + $hexagonTotalWidth * 1.6;
 }
 .tile11 {
 	position: relative;
-	top: -$v-tile-spacing * 8 - $hexagonHeight * 2 + $v-title-gap * 7 -
-		$v-title-gap - 15px;
+	top: -$v-tile-spacing * 8 - $hexagonHeight * 2 + $v-title-gap * 7;
 	left: $h-flat-tile-spacing - $hexagonTotalWidth + $v-title-gap - 15px;
 }
