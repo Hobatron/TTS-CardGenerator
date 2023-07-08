@@ -18,7 +18,7 @@ Text,Cost
 [Aura of Decay] [Passive] After a Player Attacks you: Inflict Weak and Feeble. When you end your turn next to an enemy: inflict Weak OR Feeble.,{Gold:3}
 [Light Weight Pack] [Passive] When you activate the Use action you may move 1 first.,{Gold:3}
 [Whetstone] [Passive] +1 Melee Attack and +1 Ranged Attack,{Gold:4}
-[Blunt Instrument] [Passive] +2 Melee Attack. -1 Ranged Attack. When you roll 1 or more {Dice:!} while attacking, you may inflict Daze.,{Gold:5}
+[Blunt Instrument] [Passive] +2 Melee Attack. -1 Ranged Attack. When you roll 1 or more {Dice:!} while attacking\, you may inflict Daze.,{Gold:5}
 [Explosive Arrows] [Replaces Ranged Attack/Trade] +1 Ranged Attack. When you roll one or more {Dice:!} you may ignore all {Dice:Miss} this roll. You may spend {Gem:R} to inflict 2 additional damage to your target and all adjacent targets.,{Gold:7}
 [Saltpeter] [Passive] Your damage dealing consumeable items deal +2.,{Gold:4}
 [Strongbow] [Replaces Ranged Attack/Trade] +1 Ranged Attack - When you use this action to roll one or more {Dice:!} and no {Dice:Miss} you may spend {Gem:R} to inflict Stun.,{Gold:5}
