@@ -48,7 +48,7 @@ Text,Cost
 [Halberd of Guan Yu] [Replaces Melee Attack/Prepare] +1 Prepare. +2 Melee Attack. Your Melee Attack can hit enemies Range 2 away. When you Melee Attack and roll 2 or more {Dice:!}: You may spend them to attack all enemies within Range 2 instead of just your target.,{Gold:6;Gem:R;}
 [Replaces Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:7}
 [Replaces Discover/Use] | Freezing Tincure | Your Consumable items that effect enemies also Stun one of them. (Your choice if multiple.) Fragile (Item is returned to reserve after each use.),{Gold:3}
-[Replaces Move] | Rocket Boots | +1 Move {Gem:R} : +3 Move,{Gold:4}
+[Replaces Move] | Rocket Boots | +1 Move :N {Gem:R} : +3 Move,{Gold:4}
 [Replaces Use/Discover] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do\, draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
 [Passive] | Pandora' s Box | When you buy this: You draw and must equip the top two cards from the Equipment deck. Then lose life equal to the total {Gold} cost -8. Fragile (Item is returned to reserve after each use.),{Gold:8}
 [Passive] | Lava Hammer | {Gem:R} : Melee Attack +3. When you roll one or more {Dice:!} while attacking - inflict burn. ,{Gold:4}
@@ -58,16 +58,16 @@ Text,Cost
 [Replaces Move] +1 Move. +1 Use. Once per turn: you may Stun yourself to take an additional action. This additional action must be a Move or a Use. You may use this card as though it were a Use action card.,{Gold:10}
 [Replaces Melee Attack/Prepare] | Poison Dagger | +1 Prepare. You may pay {Gem:R} when you Attack to inflict poison instead of damage. (Decide before rolling dice.),{Gold:7}
 [Meditation Stance] [Passive] +1 Prepare. When you roll one or more {Dice:Miss} you may reroll 1 die.,{Gold: 4}
-[Dangerous Chemicals] [Replaces Discover/Use] When you roll two or more {Dice:!} in a single roll during your turn - you may take a Use action using this card after finishing that action.,{Gold 5}
-[Craft/Trade],| Craft | Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. OR | Trade | Gain  Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
-[Move],Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
-[Discover/Use],| Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. OR | Use | Play a One Use Consumable card from your hand.
-[Attack/Mine],| Attack | Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. OR | Mine | Gain Slot Level {Gold}. If you are on a Rich Mine\, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
-[Melee Attack/Prepare],| Melee Attack | Gain 1 movement point. Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. OR | Prepare | Gain Slot Level and distribute them amongst your action cards. Maximum of two can be on each card.
-[Move],Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
-[Discover/Use],| Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. OR | Use | Play a One Use Consumable card from your hand.
-[Ranged Attack/Trade],| Ranged Attack | Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}\, deal 0 damage instead. OR | Trade | Gain  Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
-[Craft/Mine],| Craft | Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. OR | Mine | Mine only on a Rich Vein: Roll Slot Level dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
+[Dangerous Chemicals] [Replaces Discover/Use] When you roll two or more {Dice:!} in a single roll during your turn - you may take a Use action using this card after finishing that action.,{Gold:5}
+[Craft/Trade] Craft: Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. :N Trade: Gain {Gold:1} Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
+[Move] Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
+[Discover/Use] | Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. OR | Use | Play a One Use Consumable card from your hand.
+[Attack/Mine] | Attack | Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. OR | Mine | Gain Slot Level {Gold:1}. If you are on a Rich Mine\, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
+[Melee Attack/Prepare] | Melee Attack | Gain 1 movement point. Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. OR | Prepare | Gain Slot Level and distribute them amongst your action cards. Maximum of two can be on each card.
+[Move] Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
+[Discover/Use] | Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. OR | Use | Play a One Use Consumable card from your hand.
+[Ranged Attack/Trade] | Ranged Attack | Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}\, deal 0 damage instead. OR | Trade | Gain  Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
+[Craft/Mine] | Craft | Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. OR | Mine | Mine only on a Rich Vein: Roll Slot Level dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
 [Move],
 [Discover/Use],
 [Attack/Mine],

@@ -1,12 +1,12 @@
 <span
-  *ngFor="let partialRule of this.splitRules; let i = index"
-  [ngStyle]="{ 'font-size': this.fontSize + 'px' }"
+	*ngFor="let partialRule of this.splitRules; let i = index"
+	[ngStyle]="{ 'font-size': this.fontSize + 'px' }"
 >
-  {{ partialRule }}
-  <span *ngFor="let cost of this.resourceCosts[i]">
-    <app-icon
-      [icon]="cost"
-      [fontSize]="this.fontSize * rulesIconToTextRatio"
-    ></app-icon>
-  </span>
+	<span [innerHTML]="partialRule"></span>
+	<span *ngFor="let cost of this.resourceCosts[i]">
+		<app-icon
+			[icon]="cost"
+			[fontSize]="this.fontSize * rulesIconToTextRatio"
+		></app-icon>
+	</span>
 </span>

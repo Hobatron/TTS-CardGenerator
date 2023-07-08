@@ -1,15 +1,20 @@
 Make sure zoom is set to 100%, as it affects the image size
-<br>
+<br />
 <button type="button" (click)="appendImage()">Convert to Image</button>
 <button type="button" (click)="generateImage()">Download as Png</button>
-<div>
-    <div [ngStyle]="this.sheetStyle" id="image-section">
-        <app-card-main *ngFor="let equipment of loadedEquipment$ | async"
-            [costs]="equipment.cost"
-            [type]="equipment.type"
-            [name]="equipment.name"
-            [rules]="equipment.rules"
-        >
-        </app-card-main>
-    </div>
+<div style="display: flex; flex-wrap: wrap">
+	<div
+		*ngFor="let equipmentSheet of loadedEquipment$ | async"
+		[ngStyle]="this.sheetStyle"
+		id="image-section"
+	>
+		<app-card-main
+			*ngFor="let equipment of equipmentSheet"
+			[costs]="equipment.cost"
+			[type]="equipment.type"
+			[name]="equipment.name"
+			[rules]="equipment.rules"
+		>
+		</app-card-main>
+	</div>
 </div>
