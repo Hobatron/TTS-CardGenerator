@@ -74,7 +74,7 @@ export class CsvService {
 					usables.push({
 						slot: this.mapper.cost(slot),
 						name: name ? name[0] : undefined,
-						rules: rules,
+						rules: rules.replace(/\\/g, ''),
 						type: type ? type[0] : undefined,
 					});
 				}
@@ -122,7 +122,7 @@ export class CsvService {
 		return {
 			cost: cost,
 			name: name ? name[0] : undefined,
-			rules: rules,
+			rules: rules.replace(/\\/g, ''),
 			type: type ? type[0] : undefined,
 		} as Equipment;
 	}
