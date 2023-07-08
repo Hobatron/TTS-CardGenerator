@@ -40,7 +40,7 @@ Text,Cost
 [Passive] | Optimized Magic | Your Slot Level 4 is treated as Slot Level 5.,{Gold:6}
 [Passive] | Mirror Force | Deal X-1 damage to an enemy when they Attacks you. X is equal to your current Move action card Slot Level.,{Gold:9}
 [Passive] | Rage Aura | Once per roll turn a {Dice:Miss} into {Dice:Crit},{Gold:4;Gem:R}
-[Passive] | Hover Boots | +1 Armor. You may ignore all terrain. (This allows you to walk on Water, traverse Mountains freely, and take no damage from Lava.),{Gold:9}
+[Passive] | Hover Boots | +1 Armor. You may ignore all terrain. (This allows you to walk on Water\, traverse Mountains freely\, and take no damage from Lava.),{Gold:9}
 [Robotic Arm] [Replaces Discover/Use] When you take the Use action you may repeat it once at the same Slot Level.,{Gold:8}
 [Move] Teleport instead. (Teleport ignores all terrain and obstacles except the hex you end on.),{Gold:5}
 [Glass Spear] [Replaces Melee Attack/Prepare] Stun. +2 Slot Level if used in Slot Level 4. Fragile (Item is returned to reserve after each use.),{Gold:2}
