@@ -9,7 +9,7 @@ Text,Cost
 [Vorpal Blade] [Passive] +1 Melee Attack - When you roll one or more {Dice:!} while attacking you may spend one of them to deal 1 extra damage.,{Gold:5}
 [Longbow] [Passive] +2 Ranged Attack. You may ignore up to 1 {Dice:Miss} when you roll.,{Gold:6}
 [Mr Fusion] [Passive] Once per turn before you take either of your actions: You may discard an Equipment or Consumable card to move any action to Slot Level 4.,{Gold:3}
-[Unlocked Potential] [Passive] This card acts as an extra Action Card. It starts in the highest position. You may use it as though it were any other Action Card but still move this card. When you do, treat the Slot Level as 2.,{Gold:4}
+[Unlocked Potential] [Passive] This card acts as an extra Action Card. It starts in the highest position. You may use it as though it were any other Action Card but still move this card. When you do/, treat the Slot Level as 2.,{Gold:4}
 [Zagreus Feet] [Move Replacement] You are immune to lava. When you roll one or more {Dice:!} you may spend one to inflict Burn on an enemy within range 1.,{Gold:3}
 [Qi Control] [Passive] End of turn: You may swap your 2nd and 3rd slots.,{Gold:7}
 [Frost Armor] [Passive] +1 Armor (Armor allows you to roll 1 hit die whenever you take damage to reduce the damage.) - Enemies within range 3 of you have their movement reduced by 1.,{Gold:5;Gem:R}
