@@ -53,7 +53,7 @@ Text,Cost
 [Passive] | Pandora' s Box | When you buy this: You draw and must equip the top two cards from the Equipment deck. Then lose life equal to the total {Gold} cost -8. Fragile (Item is returned to reserve after each use.),{Gold:8}
 [Passive] | Lava Hammer | {Gem:R} : Melee Attack +3. When you roll one or more {Dice:!} while attacking - inflict burn. ,{Gold:4}
 [Passive] +1 Discover. After you resolve the Use Action you may shift your Move Card to any Slot Level.,{Gold:4}
-[Pickaxe] [Replaces Craft/Mine] +1 Mine. When you roll 1 or more {Dice:!} you may spend one of them to gain {Gem}.,{Gold:5}
+[Pickaxe] [Replaces Craft/Mine] +1 Mine. When you roll 1 or more {Dice:!} you may spend one of them to gain {Gem:R}.,{Gold:5}
 [Replaces Melee Attack/Prepare] | Brawlers Gauntlets | You can move onto a hex with an enemy. Enemies you share a hex with can't Attack you. When an enemy attempts to leave a hex you share: Melee Attack them first.,{Gold:10}
 [Replaces Move] +1 Move. +1 Use. Once per turn: you may Stun yourself to take an additional action. This additional action must be a Move or a Use. You may use this card as though it were a Use action card.,{Gold:10}
 [Replaces Melee Attack/Prepare] | Poison Dagger | +1 Prepare. You may pay {Gem:R} when you Attack to inflict poison instead of damage. (Decide before rolling dice.),{Gold:7}
