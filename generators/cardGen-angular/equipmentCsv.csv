@@ -34,7 +34,7 @@ Text,Cost
 [Bag of Holding] [Passive] When you roll two or more {Dice:!} in a single roll: You may draw a Consumable item. May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:6}
 [Passive] +1 Discover. +1 Use,{Gold:6}
 [Enchanted Weapons] [Passive] Treat all {Dice:Miss-Crit} as {Dice:!},{Gold:4;Gem:R}
-[Wings] [Replaces Move] You may ignore all terrain. (This allows you to walk on Water, traverse Mountains freely, and take no damage from Lava.),{Gold:3}
+[Wings] [Replaces Move] You may ignore all terrain. (This allows you to walk on Water/, traverse Mountains freely/, and take no damage from Lava.),{Gold:3}
 [Kevlar Armor] [Passive] When you are about to take 5 or more damage from a single source: You get +2 Armor until end of turn. (You may roll these dice now even if you already rolled Armor.) Can only activate once per turn.,{Gold:7}
 [Absorbing Armor] [Passive] +1 Armor. When you roll one or more {Dice:!} while defending you may Heal 1 for each.,{Gold:5}
 [Passive] | Optimized Magic | Your Slot Level 4 is treated as Slot Level 5.,{Gold:6}
@@ -49,7 +49,7 @@ Text,Cost
 [Replaces Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:7}
 [Replaces Discover/Use] | Freezing Tincure | Your Consumable items that effect enemies also Stun one of them. (Your choice if multiple.) Fragile (Item is returned to reserve after each use.),{Gold:3}
 [Replaces Move] | Rocket Boots | +1 Move {Gem:R} : +3 Move,{Gold:4}
-[Replaces Use/Discover] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do, draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
+[Replaces Use/Discover] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do/, draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
 [Passive] | Pandora' s Box | When you buy this: You draw and must equip the top two cards from the Equipment deck. Then lose life equal to the total {Gold} cost -8. Fragile (Item is returned to reserve after each use.),{Gold:8}
 [Passive] | Lava Hammer | {Gem:R} : Melee Attack +3. When you roll one or more {Dice:!} while attacking - inflict burn. ,{Gold:4}
 [Passive] +1 Discover. After you resolve the Use Action you may shift your Move Card to any Slot Level.,{Gold:4}
@@ -68,7 +68,7 @@ OR
 | Use | Play a One Use Consumable card from your hand.
 [Attack/Mine],| Attack | Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target.
 OR 
-| Mine | Gain Slot Level {Gold}. If you are on a Rich Mine, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
+| Mine | Gain Slot Level {Gold}. If you are on a Rich Mine/, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
 [Melee Attack/Prepare],| Melee Attack | Gain 1 movement point. Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target.
 OR 
 | Prepare | Gain Slot Level {+1 Token} and distribute them amongst your action cards. Maximum of two can be on each card.
@@ -76,7 +76,7 @@ OR
 [Discover/Use],| Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up.
 OR
 | Use | Play a One Use Consumable card from your hand.
-[Ranged Attack/Trade],| Ranged Attack | Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}, deal 0 damage instead.
+[Ranged Attack/Trade],| Ranged Attack | Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}/, deal 0 damage instead.
 OR
 | Trade | Gain ({TR1}Slot Level:/ 1/2/3/4+ {TR2} Gain {Gem}:/ 0/1/1/2) Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
 
