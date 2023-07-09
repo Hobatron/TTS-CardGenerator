@@ -18,6 +18,7 @@ import { GemSvgComponent } from './svgs/gem-svg/gem-svg.component';
 import { DiscoverSvgComponent } from './svgs/discover-svg/discover-svg.component';
 import { MineSvgComponent } from './svgs/mine-svg/mine-svg.component';
 import { HealSvgComponent } from './svgs/heal-svg/heal-svg.component';
+import { ActionsComponent } from './actions/actions.component';
 
 @NgModule({
 	declarations: [
@@ -36,6 +37,7 @@ import { HealSvgComponent } from './svgs/heal-svg/heal-svg.component';
   DiscoverSvgComponent,
   MineSvgComponent,
   HealSvgComponent,
+  ActionsComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [CsvService],

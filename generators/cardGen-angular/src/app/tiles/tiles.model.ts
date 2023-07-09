@@ -21,6 +21,7 @@ export class Hex {
 }
 
 export class Tile {
+	aMountainCheck = false;
 	hexes: Hex[];
 	currentWeight = 0;
 	currentPropertyCount = 0;
@@ -49,10 +50,15 @@ export class Tile {
 	}
 
 	private generateRandomTile(): void {
+		//While the tile:
+		//Has a valid number of properties
+		//weight between 1.5 and 2.5
+		//1 or less mine tiles
 		while (
 			this.stopGenerating < 1000 &&
 			(this.currentPropertyCount <= this.propertyTotalMinimum - 1 ||
-				!(this.currentWeight >= 1.5 && this.currentWeight <= 2.5))
+				!(this.currentWeight >= 1.5 && this.currentWeight <= 2.5) ||
+				this.hexes.filter((h) => h.bonus == Bonus.Mine).length > 1)
 		) {
 			this.hexes = [new Hex(), new Hex(), new Hex(), new Hex()];
 			this.currentWeight = 0;
@@ -70,6 +76,8 @@ export class Tile {
 				console.log('a tile has failed');
 			}
 		}
+		console.log(this);
+
 		this.hexes = this.shuffleArray(this.hexes);
 	}
 

@@ -1,0 +1,18 @@
+[Craft/Trade] Craft: Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. :N Trade: Gain {Gold:1} Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
+[Move] Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
+[Discover/Use] | Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. OR | Use | Play a One Use Consumable card from your hand.
+[Attack/Mine] | Attack | Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. OR | Mine | Gain Slot Level {Gold:1}. If you are on a Rich Mine\, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
+[Melee Attack/Prepare] | Melee Attack | Gain 1 movement point. Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. OR | Prepare | Gain Slot Level and distribute them amongst your action cards. Maximum of two can be on each card.
+[Move] Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
+[Discover/Use] | Discover | Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. OR | Use | Play a One Use Consumable card from your hand.
+[Ranged Attack/Trade] | Ranged Attack | Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}\, deal 0 damage instead. OR | Trade | Gain  Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
+[Craft/Mine] | Craft | Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. OR | Mine | Mine only on a Rich Vein: Roll Slot Level dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
+[Move],
+[Discover/Use],
+[Attack/Mine],
+[Reserve/Craft],
+[Move],
+[Craft/Trade],
+[Move],
+[Discover/Use],
+[Attack/Mine],

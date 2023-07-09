@@ -1,60 +1,87 @@
-Text,Slot
-[One use] Teleport 3 Hexes., {Slot:1}
-[One use] Teleport slot level distance.,
-[One use] Teleport slot level distance.,
-[One use] Teleport up to 5 Hexes in a straight line.,{Slot:4}
-[One use] Explore any number of adjacent tiles., {Slot:3}
-[One use] | Snipe | Range 2 per level. Deal 2 damage.,
-[One use] | Snipe | Range 2 per level. Deal 2 damage.,
-[One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
-[One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
-[One use] | Vamparic Attack | Range 1 deal 1 per level. Heal 1 per level.,
-[One use] Range 3 poison all enemies 1 per level -1., 
-[One use] Range 2 deal 1 per level. You may spend {Gem:R} to add 2 damage up to twice.,
-[One use] Range equals slot. Poison 3., 
-[One use] Range equals slot. Poison 3., 
-[One use] Over-heal 1 per level., 
-[One use] | Bloodlust | Randomly pick a player. Teleport to any hex adjacent to them., 
-[One use] Hit all adjacent hexes. Damage equals twice level., 
-[One use] Hit all adjacent hexes. Damage equals twice level., 
-[One use] Range 5 deal 5 damage to one target., {Slot:4}
-[One use] Range equals level. Deal 4 damage.,
-[One use] Range equals level. Deal 4 damage.,
-[One use] Range equals level. Deal 4 damage.,
-[One use] 5 range deal 1 damage per level., 
-[One use] 5 range deal 1 damage per level., 
-[One use] 5 range inflict daze., {Slot:3}
-[One use] The next action you take is treated as +2 slot level., {Slot:3}
-[One use] The next action you take is treated as +2 slot level., {Slot:3}
-[One use] Range 3. Deal 2 damage per level. Deal 1 damage per level to self., 
-[One use] Range 3. Deal 2 damage per level. Deal 1 damage per level to self., 
-[One use] Range 2. Deal damage equal to slot level to target tile and all adjacent tiles.,
-[One use] Range 2. Deal damage equal to slot level to target tile and all adjacent tiles.,
-[One use] Over-heal 1 per level, 
-[One use] Heal 2 per level, 
-[One use] Heal all status ailments, {Slot:2}
-[One use] Heal all status ailments, {Slot:2}
-[Trigger] When you would be inflicted with a status effect discard this instead.,
-[Trigger] When you would be inflicted with a status effect discard this instead.,
-[Trigger] When you would are attacked you may discard this and move 1 first. (This can make the attack fail.),
-[One use] Range 4 poison 1 per level., 
-[One use] Move equal to level then deal 2 damage to an adjacent player., 
-[One use] Gain gold equal to double slot level.,
-[One use] Range 1 poison 1 per level. You may spend {Gem:G} to increase slot level up to three times.,
-[One use] | Mortar and Pestle | X=Slot Level. Do one or more: {Gem:G} Heal X {Gem:R} Deal X Range 1 {Gem:B} Move X,
-[One use] Spend up to X crystals. Heal 2 per {Gem:G}. Deal 1 damage at range 4 per {Gem:R}. Move 1 per {Gem:B}., 
-[One use] | Poison Vial | Your next attack this turn inflicts poison instead of damage., {Slot:3}
-[Trigger] When you roll {Dice:Miss} you may discard this to treat any number of those as {Dice:!} instead.,
-[Trigger] At the beginning of your turn discard this and rearrange your focus bar.,
-[Instant] Spend up to 3 crystals. Heal 2 per green. Range 3 Attack 1 per red. Move per blue., 
-[Instant] | Coins | Gain 3 Gold,
-[Instant] | Coins | Gain 3 Gold,
-[Instant] | Coins | Gain 3 Gold,
-[Instant] | Bandaid | Heal 2,
-[Instant] | Bandaid | Heal 2,
-[Instant] | Rage Buff | Your next attack this turn deals 3 more damage,
-[Instant] | Blessing of Iron | Your next mine action gains 4 more coins,
-[Instant] | Merchant's Favor | Reserve any item from the item row,
-[Instant] | Accidental Teleport | Teleport up to 4 spaces in a straight line,
-[Instant] | Gambler's Dice | Roll 3 hit dice. On 3+ hits gain 5 gold.,
-[Instant] | Gem | Gain a gem of your choice.,
+,
+Text,Slot,
+[Oneuse] | Instant Transmission | Choose a hex within Range 3. Teleport to that hex. Then you may take another action., {Requires Slot Level: 1+}
+[Oneuse] | Magnetic Attraction | Gain all Gem bonuses on hexes within Slot Level range. Then you may teleport to a hex with an unused bonus within Slot Level range.,
+[Oneuse] | Remote Mining | Use all Mines within Slot Level range. For each: Roll 2 dice and gain a {Gold:1} per {Dice:Hit} and a gem per {Dice:!}.,
+[Oneuse] | Springboard | Choose a space within range 5. Teleport to that space.,{Requires Slot Level: 2+}
+[Oneuse] | Attune with Nature | Explore any number of adjacent tiles. Use all Gem and Health rewards on those tiles., {Requires Slot Level: 3+}
+[Oneuse] | Snipe | Range Slot Level +2. Deal 2 damage.,
+[Oneuse] | Snipe | Range Slot Level +2. Deal 2 damage.,
+[Oneuse] | Vamparic Attack | Range 1. Attack with Slot Level +1 dice. Heal Slot Level.,
+[Oneuse] | Vamparic Attack | Range 1. Attack with Slot Level +1 dice. Heal Slot Level.,
+[Oneuse] | Vamparic Attack | Range 1. Attack with Slot Level +1 dice. Heal Slot Level.,
+[Oneuse] | Poison Gas | Range 3 poison all enemies Slot Level -1.,
+[Oneuse] | Ki Blast | Range 2 Slot Level damage. You may spend {Gem:R} to add 2 damage up to twice.,
+[Oneuse] | Poison Dart | Range Slot Level. Poison 3.,
+[Oneuse] | Napalm Dart | Range Slot Level. Inflict Burn and Weak.,
+[Oneuse] | Full Restore | Fully Heal and remove all Status Effects., [Slot:+}
+[Oneuse] | Bloodlust | Randomly pick a player. Teleport to any hex adjacent to them. Then you may use an Attack action card as part of this action without moving it's card.,
+[Oneuse] | Bottled Lightning | Hit all adjacent hexes. Damage equals Slot Level + 2.,
+[Oneuse] | Bottled Lightning | Hit all adjacent hexes. Damage equals Slot Level + 2.,
+[Oneuse] | Cannon Shot | Range 5 deal 5 damage to one target., {Requires Slot Level: 4+}
+[Oneuse] | Makeshift Catapult | Range equals level. Roll 4 dice. Deal {Dice:Hit} damage.,
+[Oneuse] | Makeshift Catapult | Range equals level. Roll 4 dice. Deal {Dice:Hit} damage.,
+[Oneuse] | Makeshift Catapult | Range equals level. Roll 4 dice. Deal {Dice:Hit} damage.,
+[Oneuse] | Magic Missile | 5 range. Deal Slot Level damage.,
+[Oneuse] | Magic Missile | 5 range. Deal Slot Level damage.,
+[Oneuse] | Napalm | 5 range inflict Burn and Daze., {Requires Slot Level: 3}
+[Oneuse] | Power Potion | Immediately take another action. It's Slot Level is increased by 2., {Requires Slot Level: 3}
+[Oneuse] | Power Potion | Immediately take another action. It's Slot Level is increased by 2., {Requires Slot Level: 3}
+[Oneuse] | Overload | Range 3. Deal Slot Level +2 damage. Deal Slot Level damage to yourself.,
+[Oneuse] | Overload | Range 3. Deal Slot Level +2 damage. Deal Slot Level damage to yourself.,
+[Oneuse] | Grenade | Range 2. Deal damage equal to Slot Level to target tile and all adjacent tiles.,
+[Oneuse] | Grenade | Range 2. Deal damage equal to Slot Level to target tile and all adjacent tiles.,
+[Oneuse] | Full Restore | Fully Heal and remove all Status Effects., [Slot:+}
+[Oneuse] | High Potion | Heal Slot Level x2 then take another action.,
+[Trigger] | Antidote | Play at the end of your turn. Heal all status ailments.,
+[Trigger] | Antidote | Play at the end of your turn. Heal all status ailments.,
+[Trigger] | Antidote | Play at the end of your turn. Heal all status ailments.,
+[Trigger] | Strong Consitution | When you would be inflicted with a status effect discard this instead.,
+[Trigger] | Illusionary Armor | When you would are attacked you may discard this and move 1 first. (This can make the attack fail.),
+[Oneuse] | Poison Arrow | Range 3. Inflict Slot Level Poison,
+[Oneuse] | Agile Strike | Move Slot Level then deal 2 damage to an adjacent player.,
+[Oneuse] | Blast Mining | Gain Slot Level x2 {Gold:1}.,
+[Oneuse] | Poison Dagger | Range 1. Inflict Slot Level Poison. You may spend {Gem:R} to Attack with two dice up to twice.,
+[Oneuse] | Mortar and Pestle | Spend up to Slot Level gems. For each do one of the following and you may choose the same option more than once. Move 2. Attack 2. Draw a Consumable card.
+[Oneuse] | Mortar and Pestle | Spend up to Slot Level gems. For each do one of the following and you may choose the same option more than once. Move 2. Attack 2. Draw a Consumable card.
+[Oneuse] | Poison Vial | Your next attack this turn inflicts poison instead of damage. Then you may take an Attack action., {Requires Slot Level: 3}
+[Trigger] | Lucky Shot | When you roll one or more {Dice:Miss} you may discard this to treat any number of those as {Dice:Hit} instead.,
+[Trigger] | Meditation | At the beginning of your turn you may discard this and rearrange your focus bar.,
+[Immediate] | Trade Contact | Buy any number of {Gem:R} for {Gold:1} each.
+[Immediate] | Coins | Gain 3 {Gold:1},
+[Immediate] | Coins | Gain 3 {Gold:1},
+[Immediate] | Coins | Gain 3 {Gold:1},
+[Immediate] | Bandaid | Heal 4,
+[Immediate] | Bandaid | Heal 4,
+[Trigger] | Rage Buff | You may discard this when you deal damage. Attack 3 as additional damage.,
+[Immediate] | Blessing of Iron | You may take a Mine action immediately. (This moves the appropriate card.),
+[Immediate] | Merchant's Favor | Reserve any Equipment from the Market. (Reserved items can only be purchased by the player who owns them and cost 2 less.),
+[Immediate] | Chemical Acceleration | Move up to 4 ignoring all terrain.,
+[Immediate] | Gambler's Dice | Roll 3 dice. On 3+ {Dice:Hit} gain 5 {Gold:1}.,
+[Immediate] | Hidden Gems | Gain 2 {Gem:R}.,
+[OneUse] | Enfeeblement | Range 3. Inflict Feeble. Then Ranged Attack Slot Level. (With your Use Slot Level.)
+[Trigger] | Private Auction | Discard after a player Crafts an equipment. Then discard and replace any number of cards from the Equipment Market. Then Reserve 1 Equipment.
+| Stun | Next action must be remove stun.
+| Daze | Daze takes effect at the start of your turn. That entire turn you cannot use your highest Slot Level card. Then remove at end of turn.
+| Burn | Take 2 damage at the start of your turn. Remove if you end a movement action adjacent to or on a Water hex.
+| Poison | Take {Poison}x1 damage at start of your turn. Then remove one {Poison}. Can only have one source of Poison but can have multiple counters.
+| Feeble | When you take damage: increase the amount by one.
+| Weak | Weak takes effect at the start of your turn. All actions this turn have -1 Slot Level. Remove at end of turn.,
+| Stun | Next action must be remove stun.,
+| Daze | Daze takes effect at the start of your turn. That entire turn you cannot use your highest Slot Level card. Then remove at end of turn.,
+| Burn | Take 2 damage at the start of your turn. Remove if you end a movement action adjacent to or on a Water hex.,
+| Poison | Take {Poison}x1 damage at start of your turn. Then remove one {Poison}. Can only have one source of Poison but can have multiple counters.,
+| Feeble | When you take damage: increase the amount by one.,
+| Weak | Weak takes effect at the start of your turn. All actions this turn have -1 Slot Level. Remove at end of turn.,
+| Stun | Next action must be remove stun.,
+| Daze | Daze takes effect at the start of your turn. That entire turn you cannot use your highest Slot Level card. Then remove at end of turn.,
+| Burn | Take 2 damage at the start of your turn. Remove if you end a movement action adjacent to or on a Water hex.,
+| Poison | Take {Poison}x1 damage at start of your turn. Then remove one {Poison}. Can only have one source of Poison but can have multiple counters.,
+| Feeble | When you take damage: increase the amount by one.,
+| Weak | Weak takes effect at the start of your turn. All actions this turn have -1 Slot Level. Remove at end of turn.,
+| Stun | Next action must be remove stun.,
+| Daze | Daze takes effect at the start of your turn. That entire turn you cannot use your highest Slot Level card. Then remove at end of turn.,
+| Burn | Take 2 damage at the start of your turn. Remove if you end a movement action adjacent to or on a Water hex.,
+| Poison | Take {Poison}x1 damage at start of your turn. Then remove one {Poison}. Can only have one source of Poison but can have multiple counters.,
+| Feeble | When you take damage: increase the amount by one.,
+| Weak | Weak takes effect at the start of your turn. All actions this turn have -1 Slot Level. Remove at end of turn.,

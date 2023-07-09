@@ -19,7 +19,7 @@ export class RulesTextComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit(): void {
-		let logging = this.rules?.includes('Target');
+		let logging = this.rules?.includes('xxx');
 
 		if (!this.rules) {
 			this.rules = '';
@@ -33,7 +33,7 @@ export class RulesTextComponent implements OnInit {
 			}
 		});
 		this.splitRules.forEach((r, i) => {
-			this.splitRules[i] = r.replace(/:N/, '<br>');
+			this.splitRules[i] = r.replace(/:N/g, '<br>');
 		});
 		if (logging) {
 			console.log(this.splitRules);

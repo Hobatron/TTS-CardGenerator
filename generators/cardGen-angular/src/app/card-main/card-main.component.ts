@@ -21,12 +21,13 @@ export class CardMainComponent implements OnInit {
 	@Input() public costs?: Icon[];
 	@Input() public name?: string;
 	@Input() public rules?: string;
+	@Input() public isAction?: boolean = false;
 
 	constructor() {}
 
 	ngOnInit(): void {
 		const charCount = this.rules?.length || 0;
-		switch (true) {
+		switch (true && !this.isAction) {
 			case charCount >= 0 && charCount <= 50:
 				this.fontSize = 52;
 				break;

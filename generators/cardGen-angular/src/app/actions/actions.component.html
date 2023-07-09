@@ -1,0 +1,17 @@
+Make sure zoom is set to 100%, as it affects the image size
+<br />
+<div style="display: flex; flex-wrap: wrap">
+	<div
+		*ngFor="let actionsSheet of actions$ | async"
+		[ngStyle]="this.sheetStyle"
+		id="image-section"
+	>
+		<app-card-main
+			*ngFor="let actions of actionsSheet"
+			[isAction]="true"
+			[type]="actions.type"
+			[rules]="actions.rules"
+		>
+		</app-card-main>
+	</div>
+</div>
