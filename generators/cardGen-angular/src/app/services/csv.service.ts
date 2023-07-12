@@ -214,7 +214,7 @@ export class CsvService {
 	[Passive] |Vorpal Blade| +1 Melee Attack - When you roll one or more {Dice:!} while attacking you may spend one of them to deal 1 extra damage.,{Gold:5}
 	[Passive] |Longbow| +2 Ranged Attack. You may ignore up to 1 {Dice:Miss} when you roll.,{Gold:6}
 	[Passive] |Mr Fusion| Once per turn before you take either of your actions: You may discard an Equipment or Consumable card to move any action to Slot Level 4.,{Gold:3}
-	[Passive] |Unlocked Potential| This card acts as an extra Action Card. It starts in the highest position. You may use it as though it were any other Action Card but still move this card. When you do\treat the Slot Level as 2.,{Gold:4}
+	[Passive] |Unlocked Potential| This card acts as an extra Action Card. It starts in the highest position. You may use it as though it were any other Action Card but still move this card. When you do\\,treat the Slot Level as 2.,{Gold:4}
 	[Upgrades Move] |Zagreus Feet| You are immune to lava. When you roll one or more {Dice:!} you may spend one to inflict Burn on an enemy within range 1.,{Gold:3}
 	[Passive] |Qi Control| End of turn: You may swap your 2nd and 3rd slots.,{Gold:7}
 	[Passive] |Frost Armor| +1 Armor (Armor allows you to roll 1 hit die whenever you take damage to reduce the damage.) - Enemies within range 3 of you have their movement reduced by 1.,{Gold:5;Gem:R}
@@ -223,7 +223,7 @@ export class CsvService {
 	[Passive] |Aura of Decay| After a Player Attacks you: Inflict Weak and Feeble. When you end your turn next to an enemy: inflict Weak OR Feeble.,{Gold:3}
 	[Passive] |Light Weight Pack| When you activate the Use action you may move 1 first.,{Gold:3}
 	[Passive] |Whetstone| +1 Melee Attack and +1 Ranged Attack,{Gold:4}
-	[Passive] |Blunt Instrument| +2 Melee Attack. -1 Ranged Attack. When you roll 1 or more {Dice:!} while attacking\, you may inflict Daze.,{Gold:5}
+	[Passive] |Blunt Instrument| +2 Melee Attack. -1 Ranged Attack. When you roll 1 or more {Dice:!} while attacking\\, you may inflict Daze.,{Gold:5}
 	[Upgrades Ranged Attack/Trade] |Explosive Arrows| +1 Ranged Attack. When you roll one or more {Dice:!} you may ignore all {Dice:Miss} this roll. You may spend {Gem:R} to inflict 2 additional damage to your target and all adjacent targets.,{Gold:7}
 	[Passive] |Saltpeter| Your damage dealing consumeable items deal +2.,{Gold:4}
 	[Upgrades Ranged Attack/Trade] |Strongbow| +1 Ranged Attack - When you use this action to roll one or more {Dice:!} and no {Dice:Miss} you may spend {Gem:R} to inflict Stun.,{Gold:5}
@@ -239,13 +239,13 @@ export class CsvService {
 	[Passive] |Bag of Holding| When you roll two or more {Dice:!} in a single roll: You may draw a Consumable item. May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:6}
 	[Passive] +1 Discover. +1 Use,{Gold:6}
 	[Passive] |Enchanted Weapons| Treat all {Dice:Miss-Crit} as {Dice:!},{Gold:4;Gem:R}
-	[Upgrades Move] |Wings| You may ignore all terrain. (This allows you to walk on Water\, traverse Mountains freely\, and take no damage from Lava.),{Gold:3}
+	[Upgrades Move] |Wings| You may ignore all terrain. (This allows you to walk on Water\\, traverse Mountains freely\\, and take no damage from Lava.),{Gold:3}
 	[Passive] |Kevlar Armor| When you are about to take 5 or more damage from a single source: You get +2 Armor until end of turn. (You may roll these dice now even if you already rolled Armor.) Can only activate once per turn.,{Gold:7}
 	[Passive] |Absorbing Armor| +1 Armor. When you roll one or more {Dice:!} while defending you may Heal 1 for each.,{Gold:5}
 	[Passive] | Optimized Magic | Your Slot Level 4 is treated as Slot Level 5.,{Gold:6}
 	[Passive] | Mirror Force | Deal X-1 damage to an enemy when they Attacks you. X is equal to your current Move action card Slot Level.,{Gold:9}
 	[Passive] | Rage Aura | Once per roll turn a {Dice:Miss} into {Dice:Crit},{Gold:4;Gem:R}
-	[Passive] | Hover Boots | +1 Armor. You may ignore all terrain. (This allows you to walk on Water\, traverse Mountains freely\, and take no damage from Lava.),{Gold:9}
+	[Passive] | Hover Boots | +1 Armor. You may ignore all terrain. (This allows you to walk on Water\\, traverse Mountains freely\\, and take no damage from Lava.),{Gold:9}
 	[Upgrades Discover/Use] |Robotic Arm| When you take the Use action you may repeat it once at the same Slot Level.,{Gold:8}
 	[Upgrades Melee Attack/Prepare] |Glass Spear| Stun. +2 Slot Level if used in Slot Level 4. Fragile (Item is returned to reserve after each use.),{Gold:2}
 	[Upgrades Discover/Use] |Bottomless Satchel|  At the start of your turn: Draw a Consumable card.,{Gold:6}
@@ -253,7 +253,7 @@ export class CsvService {
 	[Upgrades Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:7}
 	[Upgrades Discover/Use] | Freezing Tincure | Your Consumable items that effect enemies also Stun one of them. (Your choice if multiple.) Fragile (Item is returned to reserve after each use.),{Gold:3}
 	[Upgrades Move] | Rocket Boots | +1 Move :N {Gem:R} : +3 Move,{Gold:4}
-	[Upgrades Discover/Use] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do\, draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
+	[Upgrades Discover/Use] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do\\, draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
 	[Passive] | Pandora' s Box | When you buy this: You draw and must equip the top two cards from the Equipment deck. Then lose life equal to the total {Gold} cost -8. Fragile (Item is returned to reserve after each use.),{Gold:8}
 	[Passive] | Lava Hammer | {Gem:R} : Melee Attack +3. When you roll one or more {Dice:!} while attacking - inflict burn.,{Gold:4}
 	[Passive] +1 Discover. After you resolve the Use Action you may shift your Move Card to any Slot Level.,{Gold:4}
@@ -355,11 +355,11 @@ export class CsvService {
 [Craft/Trade] Craft: Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. :N:N Trade: Gain {Gold:1} Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
 [Move] Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
 [Discover/Use] Discover: Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. :N:N Use: Play a One Use Consumable card from your hand.
-[Attack/Mine] Attack: Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. :N:N Mine: Gain Slot Level {Gold:}. If you are on a Rich Mine\, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
+[Attack/Mine] Attack: Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. :N:N Mine: Gain Slot Level {Gold:}. If you are on a Rich Mine\\, also roll three dice. Gain {Gold} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
 [Melee Attack/Prepare] Melee Attack: Gain 1 movement point. Target an enemy range one away. Roll Slot Level dice. Deal damage equal to the number of {Dice:Hit} to your target. :N:N Prepare: Gain Slot Level and distribute them amongst your action cards. Maximum of two can be on each card.
 [Move] Move: Gain Slot Level movement points. You may spend 1 movement point to move across one border or explore 1 new tile which must border the space you are in.
 [Discover/Use] Discover: Look at the top Slot Level cards of the Consumable deck. Keep one. Discard the others. If you are on a Scrap Pile keep up to two instead and use it up. :N:N Use: Play a One Use Consumable card from your hand.
-[Ranged Attack/Trade] Ranged Attack: Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}\, deal 0 damage instead. :N:N Trade: Gain  Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
+[Ranged Attack/Trade] Ranged Attack: Target an enemy range Slot Level away. Roll up to Slot Level dice. Deal damage equal to the number of {Dice:Hit} +1. If you roll any {Dice:Miss}\\, deal 0 damage instead. :N:N Trade: Gain  Then you may sell Gems to Gain 2 Gold or Draw 1 Consumable Card for each gem.
 [Craft/Mine] Craft: Craft up to one item from the market. Cost is reduced by Slot Level. Level 4+: You may discard and replace any number of market items before crafting. :N:N Mine: Mine only on a Rich Vein: Roll Slot Level dice. Gain {Gold:} for each {Dice:Hit}. Gain {Gem:R} for each {Dice:!}
 [Move]
 [Discover/Use]
