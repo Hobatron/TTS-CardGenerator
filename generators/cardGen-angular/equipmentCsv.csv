@@ -33,13 +33,13 @@ Text,Cost
 [Passive] |Backpack|+1 Use. :N May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:3}
 [Passive] |Bag of Holding|When you roll two or more {Dice:!} in a single roll: You may draw a Consumable item. May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:6;Gem:R}
 [Passive] |Enchanted Weapons| Treat all {Dice:Miss-Crit} as {Dice:!},{Gold:4;Gem:R}
-[Upgrades Move] |Wings| You may ignore all terrain. (This allows you to walk on Water\\, traverse Mountains freely\\, and take no damage from Lava.),{Gold:3}
+[Upgrades Move] |Wings| You may ignore all terrain. (This allows you to walk on Water\, traverse Mountains freely\, and take no damage from Lava.),{Gold:3}
 [Passive] |Kevlar Armor| When you are about to take 5 or more damage from a single source: You get +2 Armor until end of turn. (You may roll these dice now even if you already rolled Armor.) Can only activate once per turn.,{Gold:6}
 [Passive] |Absorbing Armor| +1 Armor. :N When you roll one or more {Dice:!} while defending you may Heal 1 for each.,{Gold:5}
 [Passive] | Optimized Magic | Your Slot Level 4 is treated as Slot Level 5.,{Gold:7}
 [Passive] | Mirror Force | Deal X-1 damage to an enemy when they Attacks you. X is equal to your current Move action card Slot Level.,{Gold:9}
 [Passive] | Rage Aura | Once per roll turn a {Dice:Miss} into {Dice:Crit},{Gold:4;Gem:R}
-[Passive] | Hover Boots | +1 Armor. :N You may ignore all terrain. (This allows you to walk on Water\\,traverse Mountains freely\\,and take no damage from Lava.),{Gold:9}
+[Passive] | Hover Boots | +1 Armor. :N You may ignore all terrain. (This allows you to walk on Water\,traverse Mountains freely\,and take no damage from Lava.),{Gold:9}
 [Upgrades Discover/Use] |Robotic Arm| When you take the Use action you may repeat it once at the same Slot Level.,{Gold:9}
 [Upgrades Melee Attack/Prepare] |Glass Spear| Stun the target of your Melee Attack. +2 Slot Level if used in Slot Level 4. Fragile (Item is returned to reserve after each use.),{Gold:2}
 [Upgrades Discover/Use] |Bottomless Satchel| At the start of your turn: Draw a Consumable card.,{Gold:8;Gem:R}
