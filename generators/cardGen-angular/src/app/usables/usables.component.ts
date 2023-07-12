@@ -15,7 +15,10 @@ export class UsablesComponent implements OnInit {
 	public sheetStyle = {
 		//this margin is oddly needed, to offset the image generated via the htmlToImage package
 		margin: ((1 - 0.92) / 2) * this.cardConst.width + 'px', //92%: this number must match throughout search the project for this comment for refrences
-		width: this.cardConst.cols * this.cardConst.width + 'px',
+		width:
+			this.cardConst.cols * this.cardConst.width +
+			this.cardConst.cardSpacing * this.cardConst.cols * 2 +
+			'px',
 		display: 'grid',
 		'grid-template-columns': `${'1fr '.repeat(this.cardConst.cols)}`,
 		gap: '0px 0px',

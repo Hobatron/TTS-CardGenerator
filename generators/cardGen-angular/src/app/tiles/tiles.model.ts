@@ -76,7 +76,6 @@ export class Tile {
 				console.log('a tile has failed');
 			}
 		}
-		console.log(this);
 
 		this.hexes = this.shuffleArray(this.hexes);
 	}
