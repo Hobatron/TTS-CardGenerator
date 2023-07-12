@@ -223,7 +223,7 @@ export class CsvService {
 	[Passive] |Aura of Decay| After a Player Attacks you: Inflict Weak and Feeble. When you end your turn next to an enemy: inflict Weak OR Feeble.,{Gold:3}
 	[Passive] |Light Weight Pack| When you activate the Use action you may move 1 first.,{Gold:3}
 	[Passive] |Whetstone| +1 Melee Attack and +1 Ranged Attack,{Gold:4}
-	[Passive] |Blunt Instrument| +2 Melee Attack. -1 Ranged Attack. When you roll 1 or more {Dice:!} while attacking\you may inflict Daze.,{Gold:5}
+	[Passive] |Blunt Instrument| +2 Melee Attack. -1 Ranged Attack. When you roll 1 or more {Dice:!} while attacking\, you may inflict Daze.,{Gold:5}
 	[Upgrades Ranged Attack/Trade] |Explosive Arrows| +1 Ranged Attack. When you roll one or more {Dice:!} you may ignore all {Dice:Miss} this roll. You may spend {Gem:R} to inflict 2 additional damage to your target and all adjacent targets.,{Gold:7}
 	[Passive] |Saltpeter| Your damage dealing consumeable items deal +2.,{Gold:4}
 	[Upgrades Ranged Attack/Trade] |Strongbow| +1 Ranged Attack - When you use this action to roll one or more {Dice:!} and no {Dice:Miss} you may spend {Gem:R} to inflict Stun.,{Gold:5}
@@ -239,13 +239,13 @@ export class CsvService {
 	[Passive] |Bag of Holding| When you roll two or more {Dice:!} in a single roll: You may draw a Consumable item. May carry two extra Consumable items. (Capacity increased from 3 to 5.),{Gold:6}
 	[Passive] +1 Discover. +1 Use,{Gold:6}
 	[Passive] |Enchanted Weapons| Treat all {Dice:Miss-Crit} as {Dice:!},{Gold:4;Gem:R}
-	[Upgrades Move] |Wings| You may ignore all terrain. (This allows you to walk on Water\traverse Mountains freely\and take no damage from Lava.),{Gold:3}
+	[Upgrades Move] |Wings| You may ignore all terrain. (This allows you to walk on Water\, traverse Mountains freely\, and take no damage from Lava.),{Gold:3}
 	[Passive] |Kevlar Armor| When you are about to take 5 or more damage from a single source: You get +2 Armor until end of turn. (You may roll these dice now even if you already rolled Armor.) Can only activate once per turn.,{Gold:7}
 	[Passive] |Absorbing Armor| +1 Armor. When you roll one or more {Dice:!} while defending you may Heal 1 for each.,{Gold:5}
 	[Passive] | Optimized Magic | Your Slot Level 4 is treated as Slot Level 5.,{Gold:6}
 	[Passive] | Mirror Force | Deal X-1 damage to an enemy when they Attacks you. X is equal to your current Move action card Slot Level.,{Gold:9}
 	[Passive] | Rage Aura | Once per roll turn a {Dice:Miss} into {Dice:Crit},{Gold:4;Gem:R}
-	[Passive] | Hover Boots | +1 Armor. You may ignore all terrain. (This allows you to walk on Water\traverse Mountains freely\and take no damage from Lava.),{Gold:9}
+	[Passive] | Hover Boots | +1 Armor. You may ignore all terrain. (This allows you to walk on Water\, traverse Mountains freely\, and take no damage from Lava.),{Gold:9}
 	[Upgrades Discover/Use] |Robotic Arm| When you take the Use action you may repeat it once at the same Slot Level.,{Gold:8}
 	[Upgrades Melee Attack/Prepare] |Glass Spear| Stun. +2 Slot Level if used in Slot Level 4. Fragile (Item is returned to reserve after each use.),{Gold:2}
 	[Upgrades Discover/Use] |Bottomless Satchel|  At the start of your turn: Draw a Consumable card.,{Gold:6}
@@ -253,7 +253,7 @@ export class CsvService {
 	[Upgrades Move] | Phasing Boots | Move +3. You can move through players as long as you don't end your move in the same hex. When you do this; you deal 1 to them.,{Gold:7}
 	[Upgrades Discover/Use] | Freezing Tincure | Your Consumable items that effect enemies also Stun one of them. (Your choice if multiple.) Fragile (Item is returned to reserve after each use.),{Gold:3}
 	[Upgrades Move] | Rocket Boots | +1 Move :N {Gem:R} : +3 Move,{Gold:4}
-	[Upgrades Discover/Use] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do\draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
+	[Upgrades Discover/Use] | Quick-Access Belt | When Crafted: you may pay {Gem:R}. If you do\, draw 2 cards from the Consumable deck and keep them. +2 Use. Play with your Consumable cards revealed.,{Gold:6}
 	[Passive] | Pandora' s Box | When you buy this: You draw and must equip the top two cards from the Equipment deck. Then lose life equal to the total {Gold} cost -8. Fragile (Item is returned to reserve after each use.),{Gold:8}
 	[Passive] | Lava Hammer | {Gem:R} : Melee Attack +3. When you roll one or more {Dice:!} while attacking - inflict burn.,{Gold:4}
 	[Passive] +1 Discover. After you resolve the Use Action you may shift your Move Card to any Slot Level.,{Gold:4}
